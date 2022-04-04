@@ -1,0 +1,591 @@
+@font-face {
+    font-family: "San Francisco Display Black";
+    src: url(../fonts/SanFranciscoDisplay-Black.otf);
+}
+
+@font-face {
+    font-family: "San Francisco Display Bold";
+    src: url(../fonts/SanFranciscoDisplay-Bold.otf);
+}
+
+@font-face {
+    font-family: "San Francisco Display Heavy";
+    src: url(../fonts/SanFranciscoDisplay-Heavy.otf);
+}
+
+@font-face {
+    font-family: "San Francisco Display Light";
+    src: url(../fonts/SanFranciscoDisplay-Light.otf);
+}
+
+@font-face {
+    font-family: "San Francisco Display Medium";
+    src: url(../fonts/SanFranciscoDisplay-Medium.otf);
+}
+
+@font-face {
+    font-family: "San Francisco Display Regular";
+    src: url(../fonts/SanFranciscoDisplay-Regular.otf);
+}
+
+@font-face {
+    font-family: "San Francisco Display Semibold";
+    src: url(../fonts/SanFranciscoDisplay-Semibold.otf);
+}
+
+@font-face {
+    font-family: "San Francisco Display Thin";
+    src: url(../fonts/SanFranciscoDisplay-Thin.otf);
+}
+
+@font-face {
+    font-family: "San Francisco Display Ultralight";
+    src: url(../fonts/SanFranciscoDisplay-Ultralight.otf);
+}
+
+/* ----------------------HEADER------------------------ */
+
+/* -------------Pre-header-------------- */
+header {
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    padding: 25px 0px 15px 0px;
+    margin-bottom: 5px;
+}
+
+header .preHeader .input-group {
+    width: 360px;
+    height: 36px;
+}
+
+header .preHeader .input-group button {
+    position: absolute;
+    right: 0px;
+    z-index: 999;
+    box-shadow: none;
+}
+
+header .preHeader .btn-login {
+    border: 2px solid #34AC3D;
+    border-radius: 6px;
+    width: 133px;
+    height: 40px;
+    color: #34AC3D;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    float: right;
+    box-shadow: none;
+}
+
+header .preHeader .btn-register {
+    background: #34AC3D;
+    width: 133px;
+    height: 40px;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    float: right;
+    margin-right: 16px;
+    box-shadow: none;
+}
+
+header .preHeader .authen-author {
+    display: inline-block;
+}
+
+/* -------------Navigation-------------- */
+header #navigation-desktop {
+    margin-top: 10px;
+}
+
+
+header #navigation-desktop ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header #navigation-desktop ul li {
+    display: inline;
+    flex-grow: 1;
+}
+
+header #navigation-desktop ul li:nth-last-child(2) {
+    flex-grow: 2;
+}
+
+header #navigation-desktop ul .btn-trial {
+    background: #EA8932;
+    border-radius: 6px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 12px;
+    width: 101px;
+    height: 32px;
+
+}
+
+header #navigation-desktop ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    display: inline-block;
+}
+
+/* ----------------------BANNER------------------------ */
+#banner {
+    padding: 41px 0px 33px 0px;
+    position: relative;
+    background-image: url("../background-images/banner-background.png");
+    background-color: #F3FFF9;
+    background-repeat: no-repeat;
+    padding-bottom: 200px;
+    /* background-position:center; */
+}
+
+#banner .btn-free-trial {
+    color: #FFFFFF;
+    width: 242px;
+    height: 54px;
+    background: #34AC3D;
+    border-radius: 6px;
+    margin-right: 15px;
+}
+
+/* #banner .btn-discover::before{
+    content: url(..//../images/discover-icon.svg);
+    position: absolute;
+    right: 0px;
+} */
+
+#banner .btn-discover {
+    border: 2px solid #34AC3D;
+    border-radius: 6px;
+    width: 242px;
+    height: 54px;
+    color: #34AC3D;
+    text-align: center;
+}
+
+#banner .btn-discover img {
+    margin-right: 5px;
+}
+
+
+
+#banner .banner-image {
+    position: absolute;
+    right: -80px;
+    top: 40px;
+}
+
+#banner .content {
+    padding-top: 70px;
+}
+
+#banner .content h2 {
+    font-family: "San Francisco Display Bold";
+    font-weight: 800;
+    font-size: 42px;
+    color: #0F499F;
+}
+
+#banner .content p:nth-child(2) {
+    font-family: "San Francisco Display Regular";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #4F4F4F;
+}
+
+#banner .content p:nth-child(3) {
+    font-family: "San Francisco Display Semibold";
+    font-style: italic;
+    position: relative;
+    color: #FF9638;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 36px;
+}
+
+#banner .content p:nth-child(3)::before {
+    content: url('../../images/banner-icon-1.svg');
+    position: absolute;
+    left: 0px;
+}
+
+
+/* #banner .btn-discover span{
+    
+} */
+
+
+
+#banner .row .content {
+    /* align-self: center; */
+}
+
+#banner .row .img-fluid {
+    /* align-self: center; */
+}
+
+
+/* ----------------------MAIN CONTENT------------------------ */
+/* --------vPOS mang đến giải pháp quản lý tối ưu như thế nào------ */
+#services {
+    padding-top: 60px;
+    background-color: #FFFFFF;
+    background-image: url('../background-images/services-background.png');
+}
+
+#services .title {
+    font-family: "San Francisco Display Bold";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    width: 100%;
+    max-width: 843px;
+    margin: 0px auto;
+}
+
+#services .title span {
+    color: #34AC3D;
+}
+
+
+/* ----------Quản lý quầy và kho thuốc tập trung--------  */
+#services .stock-manage {
+    background: #F0FAEB;
+    border-radius: 20px;
+    margin: 36px 0px 40px 0px;
+}
+
+#services .stock-manage .content {
+    padding: 0px 50px 0px 30px;
+}
+
+#services .stock-manage .content h3 {
+    font-family: "San Francisco Display Bold";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #34AC3D;
+    margin: 36px 0px 20px 0px;
+}
+
+#services .stock-manage .content p {
+    font-family: "San Francisco Display Medium";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4F4F4F;
+}
+
+#services .stock-manage .content p i {
+    color: #34AC3D;
+    margin-right: 5px;
+}
+
+
+/* ----------Tra cứu thuốc  và nhập liệu dễ dàng--------  */
+#services .search {
+    background: #EEF6FC;
+    border-radius: 20px;
+    margin: 36px 0px 40px 0px;
+}
+
+#services .search .content {
+    padding: 0px 40px 0px 39px;
+}
+
+#services .search .content h3 {
+    font-family: "San Francisco Display Bold";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #2FA8E9;
+    margin: 36px 0px 20px 0px;
+}
+
+#services .search .content p {
+    font-family: "San Francisco Display Medium";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4F4F4F;
+}
+
+#services .search .content p i {
+    color: #2FA8E9;
+    margin-right: 5px;
+}
+
+/* ----------Quản lý đơn hàng và khách hàng--------  */
+#services .order-manage {
+    background: #FFF3F1;
+    border-radius: 20px;
+    margin: 36px 0px 40px 0px;
+}
+
+#services .order-manage .content {
+    padding: 0px 50px 0px 30px;
+}
+
+#services .order-manage .content h3 {
+    font-family: "San Francisco Display Bold";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FD3521;
+    margin: 36px 0px 20px 0px;
+}
+
+#services .order-manage .content p {
+    font-family: "San Francisco Display Medium";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4F4F4F;
+}
+
+#services .order-manage .content p i {
+    color: #FD3521;
+    margin-right: 5px;
+}
+
+
+/* ----------Báo cáo nhanh với Cục quản lý Dược--------  */
+#services .report {
+    background: #FFF9EE;
+    border-radius: 20px;
+    margin: 36px 0px 40px 0px;
+}
+
+#services .report .content {
+    padding: 0px 40px 0px 39px;
+}
+
+#services .report .content h3 {
+    font-family: "San Francisco Display Bold";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #282828;
+    margin: 36px 0px 20px 0px;
+}
+
+#services .report .content p {
+    font-family: "San Francisco Display Medium";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4F4F4F;
+}
+
+#services .report .content p i {
+    color: #FFB122;
+    margin-right: 5px;
+}
+
+#services .btn-free-trial {
+    font-family: "San Francisco Display Bold";
+    width: 242px;
+    height: 54px;
+    background: linear-gradient(90deg, #3BB54A 0%, #7EC341 100%);
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    display: block;
+    margin: 41px auto 0px auto;
+}
+
+
+
+/* --------------Bảng giá phần mềm quản lý bán hàng---------------- */
+#priceboard {
+    background-image: url('..//background-images/priceboard-bg.png');
+    background-repeat: no-repeat;
+}
+
+
+#priceboard .wp-content .introduction {
+    margin-bottom: 40px;
+}
+
+#priceboard .wp-content .introduction h2 {
+    font-family: "San Francisco Display Bold";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    color: #333333;
+    padding-top: 60px;
+}
+
+#priceboard .wp-content .introduction p {
+    font-family: "San Francisco Display Medium";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #828282;
+}
+
+#priceboard .supplies .item {
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    border-radius: 16px;
+    width: 360px;
+    height: 459px;
+    text-align: center;
+}
+
+#priceboard .supplies .item img {
+    display: block;
+    margin: 40px auto 30px auto;
+}
+
+#priceboard .supplies .item h2 {
+    font-family: "San Francisco Display Bold";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    color: #333333;
+}
+
+
+#priceboard .supplies .item p:nth-child(3) {
+    font-family: "San Francisco Display Medium";
+    color: #828282;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+#priceboard .supplies .item p:nth-child(4) {
+    font-family: "San Francisco Display Regular";
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    color: #4F4F4F;
+}
+
+
+#priceboard .supplies .item p:nth-child(4) span {
+    font-family: "San Francisco Display Bold";
+    color: #EA8932;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 44px;
+    margin-right: 15px;
+    position: relative;
+}
+
+#priceboard .supplies .item p:nth-child(4) span::after {
+    content: "đ";
+    font-family: "San Francisco Display Bold";
+    color: #EA8932;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 44px;
+    position: absolute;
+}
+
+#priceboard .supplies .item .btn-trial {
+    width: 179px;
+    height: 54px;
+    background: linear-gradient(90deg, #3BB54A 0%, #7EC341 100%);
+    border-radius: 4px;
+    margin-bottom: 25px;
+}
+
+#priceboard .supplies .item .btn-trial p {
+    line-height: 30px;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: 0px;
+    position: relative;
+    margin-left: -33px;
+}
+
+#priceboard .supplies .item .btn-trial p::after {
+    content: url('../../images/arrow-right.svg');
+    position: absolute;
+    right: 20px;
+    text-align: center;
+}
+
+#priceboard .supplies .item .content {
+    margin: 0px auto;
+    width: 250px;
+    text-align: left;
+
+}
+
+#priceboard .supplies .item .content p {
+    font-family: "San Francisco Display Medium";
+    font-weight: 500;
+    font-size: 16px;
+    color: #828282;
+}
+
+#priceboard .supplies .item .content p i {
+    color: #34AC3D;
+    margin-right: 10px;
+}
+
+#priceboard .supplies .item .content p span {
+    color: #333333;
+    margin-right: 10px;
+}
+
+
+/* -------------------Hệ thống thông báo chi tiết và đầy đủ-------------- */
+#report-system {
+    background-image: url('../background-images/system-report-bg.png');
+    background-repeat: no-repeat;
+    padding-bottom: 320px;
+}
+
+#report-system .content {
+    display: flex;
+}
+
+#report-system .content .item {
+    width: 24%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    text-align: center;
+    margin: 0px 5px;
+    padding: 10px;
+}
+
+#report-system .content .item img {
+    display: block;
+    margin: 0px auto;
+}
+
+#report-system .title {
+    padding-top: 240px;
+}
+
+#report-system .btn-free-trial {
+    color: #FFFFFF;
+    width: 261px;
+    height: 54px;
+    background: #F8BC1E;
+    border-radius: 4px;
+    display: block;
+    margin: 0px auto;
+    margin-top: 50px;
+}
