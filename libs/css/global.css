@@ -68,3 +68,7 @@ body, html {
     /* background-color: antiquewhite; */
 }
 
+
+.clear-both {
+    clear: both;
+}
