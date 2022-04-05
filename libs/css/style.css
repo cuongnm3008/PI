@@ -58,6 +58,12 @@ header .preHeader .input-group {
     height: 36px;
 }
 
+header .preHeader .input-group input {
+    font-weight: 400;
+    font-size: 15px;
+    color: #BDBDBD;
+}
+
 header .preHeader .input-group button {
     position: absolute;
     right: 0px;
@@ -66,6 +72,7 @@ header .preHeader .input-group button {
 }
 
 header .preHeader .btn-login {
+    font-family: "San Francisco Display Bold";
     border: 2px solid #34AC3D;
     border-radius: 6px;
     width: 133px;
@@ -79,6 +86,7 @@ header .preHeader .btn-login {
 }
 
 header .preHeader .btn-register {
+    font-family: "San Francisco Display Bold";
     background: #34AC3D;
     width: 133px;
     height: 40px;
@@ -449,6 +457,7 @@ header #navigation-desktop ul li a {
 #priceboard .supplies .item {
     background: #FFFFFF;
     border: 1px solid #BDBDBD;
+    box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.05);
     border-radius: 16px;
     width: 360px;
     height: 459px;
@@ -578,6 +587,22 @@ header #navigation-desktop ul li a {
     margin: 0px 5px;
     padding: 10px;
     height: 330px;
+}
+
+#report-system .content .item h3 {
+    font-family: "San Francisco Display Bold";
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+#report-system .content .item p {
+    font-family: "San Francisco Display Regular";
+    font-weight: 400;
+    font-size: 15px;
+    color: #333333;
+    padding: 5px;
 }
 
 #report-system .content .item:nth-child(1) {
@@ -825,7 +850,8 @@ header #navigation-desktop ul li a {
     color: #FFFFFF;
     font-weight: 600;
     font-size: 20px;
-    font-family: "San Francisco Display Bold";     
+    font-family: "San Francisco Display Bold";   
+    margin-left: 20px;  
 }
 
 /* ----------------------FOOTER--------------------- */
