@@ -35,7 +35,7 @@
 <body>
     <div class="wapper">
         <header>
-            <div class="wp-content">
+            <div id="menu-destop" class="wp-content">
                 <div class="preHeader row">
                     <div class="col-lg-2 col-md-2">
                         <img src="images/Logo.png" alt="">
@@ -79,15 +79,57 @@
                         </li>
                         <button class="btn btn-trial">Dùng thử</button>
                     </ul>
-
                 </nav>
-
+            </div>
+            <div id="menu-tablet">
+                <div class="wp-content">
+                    <div class="preHeader">
+                        <img src="images/Logo.png" alt="">
+                        <!-- <img class="btn-tablet" src="images/toggle.svg" alt=""> -->
+                        <i class="btn-tablet fa-solid fa-bars"></i>
+                        <img class="search" src="images/search.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="nav-tablet">
+                <div id="wapper-tablet-menu">
+                    <div class="nav_tablet_header">
+                        <img class="img-fluid" src="images/Logo.png" alt="logo" />
+                        <i class="fa-solid fa-xmark" id="closePhoneMenu"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="#">Tính năng</a>
+                        </li>
+                        <li>
+                            <a href="#">Bảng giá</a>
+                        </li>
+                        <li>
+                            <a href="#">Ứng dụng Mobile</a>
+                        </li>
+                        <li>
+                            <a href="#">Thiết bị bán hàng</a>
+                        </li>
+                        <li>
+                            <a href="#">Khách hàng</a>
+                        </li>
+                        <li>
+                            <a href="#">Ngành hàng</a>
+                        </li>
+                        <button class="btn btn-login">Đăng nhập</button>
+                        <button class="btn btn-register">Đăng ký</button>
+                        <button class="btn btn-trial">Dùng thử</button>
+                    </ul>
+                </div>
             </div>
         </header>
         <div id="banner">
             <div class="wp-content">
                 <div class="row">
-                    <div class="content col-md-7">
+                    <div class="content col-lg-7 col-md-12">
                         <h2>Phần mềm quản lý nhà thuốc</h2>
                         <p>Quản lý nhà thuốc chuẩn GPP, theo dõi tồn kho, hạn dùng và doanh thu, lãi lỗ chính xác nhât
                         </p>
@@ -98,9 +140,9 @@
                             <span>Khám phá VPOS</span>
                         </button>
                     </div>
-                    <div class="img-fluid banner-image col-md-6">
-                        <img src="images/banner-image.png" alt="">
-                    </div>
+
+                    <img class="img-fluid banner-image" src="images/banner-image.png" alt="">
+
                 </div>
 
             </div>
@@ -119,29 +161,30 @@
 
                     <div class="stock-manage">
                         <div class="row">
-                            <div class="col-5">
+                            <div class="col-lg-5">
                                 <img src="images/quan-ly-kho.png" alt="">
                             </div>
-                            <div class="col-7 content">
+                            <div class="col-lg-7 content">
                                 <h3>Quản lý quầy và kho thuốc tập trung</h3>
                                 <p>
-                                    <i class="fa-solid fa-circle-check"></i> 
+                                    <i class="fa-solid fa-circle-check"></i>
                                     <span>Kiểm soát thời hạn tồn kho, ngày nhập hàng,
                                         số lượng hàng tồn và thời hạn sử dụng của từng loại thuốc.</span>
                                 </p>
                                 <p>
-                                    <i class="fa-solid fa-circle-check"></i> 
+                                    <i class="fa-solid fa-circle-check"></i>
                                     <span>Quản lý lô nhập, tình trạng liên thông và
-                                    thông tin nhà cung cấp ngay trên Phần mềm quản lý nhà thuốc.</span>
+                                        thông tin nhà cung cấp ngay trên Phần mềm quản lý nhà thuốc.</span>
                                 </p>
-                                <p><i class="fa-solid fa-circle-check"></i> 
+                                <p><i class="fa-solid fa-circle-check"></i>
                                     <span>Cảnh báo thuốc sắp hết và gợi ý nhập kho kịp
-                                    thời, dễ dàng luân chuyển tồn kho giữa các cửa hàng thuốc trong chuỗi.</span>
+                                        thời, dễ dàng luân chuyển tồn kho giữa các cửa hàng thuốc trong chuỗi.</span>
                                 </p>
                                 <p>
-                                    <i class="fa-solid fa-circle-check"></i> 
+                                    <i class="fa-solid fa-circle-check"></i>
                                     <span>Tạo đơn và check tồn kho nhanh chóng ngay
-                                    trên màn hình bán hàng mà không cần đi kiểm tra lại tủ thuốc hay kho thuốc.</span>
+                                        trên màn hình bán hàng mà không cần đi kiểm tra lại tủ thuốc hay kho
+                                        thuốc.</span>
                                 </p>
                             </div>
                         </div>
@@ -150,26 +193,26 @@
                     <!-- -----Tra cứu thuốc  và nhập liệu dễ dàng----- -->
                     <div class="search">
                         <div class="row">
-                            <div class="col-7 content">
+                            <div class="col-lg-7 content">
                                 <h3>Tra cứu thuốc và nhập liệu dễ dàng</h3>
                                 <p><i class="fa-solid fa-circle-check"></i> <span>
-                                    Thêm mới và tra cứu thuốc nhanh chóng với
-                                    kho dữ liệu hơn 100,000 thuốc đã được công bố với Cục quản lý Dược Quốc gia.
-                                </span></p>
+                                        Thêm mới và tra cứu thuốc nhanh chóng với
+                                        kho dữ liệu hơn 100,000 thuốc đã được công bố với Cục quản lý Dược Quốc gia.
+                                    </span></p>
                                 <p><i class="fa-solid fa-circle-check"></i> <span>
-                                    Quản lý thuốc nhanh chóng với mã vạch, mã
-                                    sản phẩm, đồng thời theo dõi hạn dùng và tồn kho ngay trên cùng một màn hình.
-                                </span></p>
+                                        Quản lý thuốc nhanh chóng với mã vạch, mã
+                                        sản phẩm, đồng thời theo dõi hạn dùng và tồn kho ngay trên cùng một màn hình.
+                                    </span></p>
                                 <p><i class="fa-solid fa-circle-check"></i> <span>
-                                    Tối ưu quá trình nhập liệu thuốc mới với đầy
-                                    đủ thông tin thuốc, thành phần và hoạt tính.
-                                </span></p>
+                                        Tối ưu quá trình nhập liệu thuốc mới với đầy
+                                        đủ thông tin thuốc, thành phần và hoạt tính.
+                                    </span></p>
                                 <p><i class="fa-solid fa-circle-check"></i> <span>
-                                    Tìm thuốc dễ dàng với hệ thống quản lý kho
-                                    chính xác, chi tiết đến từng vị trí lưu kho, danh mục, loại thuốc,...
-                                </span></p>
+                                        Tìm thuốc dễ dàng với hệ thống quản lý kho
+                                        chính xác, chi tiết đến từng vị trí lưu kho, danh mục, loại thuốc,...
+                                    </span></p>
                             </div>
-                            <div class="col-5">
+                            <div class="col-lg-5">
                                 <img src="images/tra-cuu-thuoc.png" alt="">
                             </div>
                         </div>
@@ -178,27 +221,27 @@
                     <!-- -------Quản lý đơn hàng và khách hàng----- -->
                     <div class="order-manage">
                         <div class="row">
-                            <div class="col-5">
+                            <div class="col-lg-5">
                                 <img src="images/order.png" alt="">
                             </div>
-                            <div class="col-7 content">
+                            <div class="col-lg-7 content">
                                 <h3>Quản lý đơn hàng và khách hàng</h3>
                                 <p><i class="fa-solid fa-circle-check"></i> <span>
-                                    Kiểm soát thông tin khách hàng và lịch sử
-                                    mua hàng chi tiết ngay trên hệ thống phần mềm nhà thuốc.
-                                </span></p>
+                                        Kiểm soát thông tin khách hàng và lịch sử
+                                        mua hàng chi tiết ngay trên hệ thống phần mềm nhà thuốc.
+                                    </span></p>
                                 <p><i class="fa-solid fa-circle-check"></i> <span>
-                                    Lưu trữ toàn bộ đơn thuốc, thời gian tạo đơn
-                                    và nhân viên phụ trách.
-                                </span></p>
+                                        Lưu trữ toàn bộ đơn thuốc, thời gian tạo đơn
+                                        và nhân viên phụ trách.
+                                    </span></p>
                                 <p><i class="fa-solid fa-circle-check"></i> <span>
-                                    Quản lý toàn bộ ca làm việc và lịch sử tạo
-                                    đơn của từng nhân viên tại quầy.
-                                </span></p>
+                                        Quản lý toàn bộ ca làm việc và lịch sử tạo
+                                        đơn của từng nhân viên tại quầy.
+                                    </span></p>
                                 <p><i class="fa-solid fa-circle-check"></i> <span>
-                                    Kiểm soát và quản lý cửa hàng cũng như toàn
-                                    chuỗi ngay cả khi không có mặt tại cửa hàng.
-                                </span></p>
+                                        Kiểm soát và quản lý cửa hàng cũng như toàn
+                                        chuỗi ngay cả khi không có mặt tại cửa hàng.
+                                    </span></p>
                             </div>
                         </div>
                     </div>
@@ -207,23 +250,24 @@
                     <!-- --------Báo cáo nhanh với Cục quản lý Dược------ -->
                     <div class="report">
                         <div class="row">
-                            <div class="col-7 content">
+                            <div class="col-lg-7 content">
                                 <h3>Báo cáo nhanh với Cục quản lý Dược</h3>
                                 <p><i class="fa-solid fa-circle-check"></i> <span>
-                                    Tùy chọn đồng bộ dữ liệu thuốc, đơn bán, đơn
-                                    nhập lên hệ thống Dược Quốc Gia.
-                                </span> </p>
+                                        Tùy chọn đồng bộ dữ liệu thuốc, đơn bán, đơn
+                                        nhập lên hệ thống Dược Quốc Gia.
+                                    </span> </p>
                                 <p><i class="fa-solid fa-circle-check"></i> <span>
-                                    Tiết kiệm thời gian báo cáo định kỳ nhờ tính
-                                    năng liên thông trực tiếp từ hệ thống phần mềm Sapo khi có thao tác nhập/ xuất kho
-                                    và tạo đơn.
-                                </span></p>
+                                        Tiết kiệm thời gian báo cáo định kỳ nhờ tính
+                                        năng liên thông trực tiếp từ hệ thống phần mềm Sapo khi có thao tác nhập/ xuất
+                                        kho
+                                        và tạo đơn.
+                                    </span></p>
                                 <p><i class="fa-solid fa-circle-check"></i> <span>
-                                    Dễ dàng kiểm tra toàn bộ chứng từ sau khi
-                                    liên thông và cập nhật thành công lên hệ thống Dược Quốc Gia.
-                                </span></p>
+                                        Dễ dàng kiểm tra toàn bộ chứng từ sau khi
+                                        liên thông và cập nhật thành công lên hệ thống Dược Quốc Gia.
+                                    </span></p>
                             </div>
-                            <div class="col-5">
+                            <div class="col-lg-5">
                                 <img src="images/bao-cao.png" alt="">
                             </div>
                         </div>
@@ -239,7 +283,7 @@
                         <h2>Bảng giá phần mềm quản lý bán hàng</h2>
                         <p>Hãy lựa chọn gói giải pháp phù hợp với nhu cầu của bạn và dùng thử miễn phí 7 ngày</p>
                     </div>
-                    <div class="supplies row">
+                    <div id="supplies-desktop" class="supplies row">
                         <div class=" col-lg-4">
                             <div class="item">
                                 <img src="images/two-account.png" alt="">
@@ -288,6 +332,59 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div id="supplies-tablet" class="supplies row owl-carousel owl-theme">
+                       
+
+                            <div class="item">
+                                <img src="images/two-account.png" alt="">
+                                <h2>GÓI 12 THÁNG</h2>
+                                <p>Dành cho 2 tài khoản</p>
+                                <p><span>960.000</span> / tháng</p>
+                                <button class="btn btn-trial">
+                                    <p>Dùng thử</p>
+                                </button>
+                                <div class="content">
+                                    <p><i class="fa-solid fa-check"></i>Thời gian sử dụng: <span>12 tháng</span></p>
+                                    <p><i class="fa-solid fa-check"></i>Số tài khoản: <span>2 tài khoản</span></p>
+                                </div>
+                            </div>
+
+                       
+                      
+
+                            <div class="item">
+                                <img src="images/three-account.png" alt="">
+                                <h2>GÓI 12 THÁNG</h2>
+                                <p>Dành cho 2 tài khoản</p>
+                                <p><span>1.200.000</span> / tháng</p>
+                                <button class="btn btn-trial">
+                                    <p>Dùng thử</p>
+                                </button>
+                                <div class="content">
+                                    <p><i class="fa-solid fa-check"></i>Thời gian sử dụng: <span>12 tháng</span></p>
+                                    <p><i class="fa-solid fa-check"></i>Số tài khoản: <span>3 tài khoản</span></p>
+                                </div>
+                            </div>
+
+                       
+
+                            <div class="item">
+                                <img src="images/unlimited.png" alt="">
+                                <h2>GÓI 12 THÁNG</h2>
+                                <p>Dành cho 2 tài khoản</p>
+                                <p class="text-center"><span>1.200.000</span> / tháng</p>
+                                <button class="btn btn-trial">
+                                    <p>Dùng thử</p>
+                                </button>
+                                <div class="content">
+                                    <p><i class="fa-solid fa-check"></i>Thời gian sử dụng: <span>12 tháng</span></p>
+                                    <p><i class="fa-solid fa-check"></i>Số tài khoản: <span>Không giới hạn</span></p>
+                                </div>
+                            </div>
+
+                       
                     </div>
                 </div>
             </section>
@@ -480,7 +577,8 @@
                     <h3>Liên hệ</h3>
                     <p>Công Ty TNHH Orenda</p>
                     <p><span>GPKD:</span> 0109143493 – cấp ngày 25/3/2020</p>
-                    <p><img src="images/location.svg" alt=""> Số 40, Tổ 28, Phường Hoàng Văn Thụ, Quận Hoàng Mai, Thành phố Hà Nội.</p>
+                    <p><img src="images/location.svg" alt=""> Số 40, Tổ 28, Phường Hoàng Văn Thụ, Quận Hoàng Mai, Thành
+                        phố Hà Nội.</p>
                     <p><img src="images/phone-icon.svg" alt=""> 0965.466.288</p>
                     <p><img src="images/envelope.svg" alt=""> contact@vClinic.vn</p>
                 </div>

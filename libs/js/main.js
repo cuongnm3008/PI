@@ -30,6 +30,31 @@ $(document).ready(function () {
 
 });
 
+//Bảng giá
+$(document).ready(function () { 
+    $("#supplies-tablet").owlCarousel({
+              center: false,
+              loop: false,
+              dots: true,
+              navs: false,
+            //   autoplay: true,
+            //   autoplayTimeout : 3000,
+              responsive: {
+                  0: {
+                      items: 1,
+                  },
+                  768: {
+                    items: 2,
+                  },
+                  992: {
+                      items: 2,
+                  },
+                  1200: {
+                    items: 3,
+                },
+              },
+      });
+});
 
 // Giải đáp những thắc mắc về  Phần mềm
 $(document).ready(function () {
@@ -69,4 +94,15 @@ $('#backTop').click(function (e) {
     $('html, body').animate({
         scrollTop: 0
     }, 0);
-})
+});
+
+
+// Tablet navbar
+$(document).ready(function () {
+    $(".btn-tablet").click(function () {
+        $('#wapper-tablet-menu').attr('style', 'width: 450px ');
+    });
+    $("#closePhoneMenu").click(function () {
+        $('#wapper-tablet-menu').attr('style', 'width: 0px ');
+    });
+});

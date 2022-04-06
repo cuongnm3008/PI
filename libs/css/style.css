@@ -50,7 +50,12 @@ header {
     background-color: #FFFFFF;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
     padding: 25px 0px 15px 0px;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
+    /* position: fixed; */
+    /* top: 0; */
+    /* z-index: 9999; */
+    /* max-width: 1920px; */
+    /* width: 100%; */
 }
 
 header .preHeader .input-group {
@@ -104,6 +109,10 @@ header .preHeader .btn-register {
     box-shadow: none;
 }
 
+header #menu-tablet{
+    display: none;
+}
+
 header .preHeader .authen-author {
     display: inline-block;
 }
@@ -153,6 +162,54 @@ header #navigation-desktop ul li a {
     display: inline-block;
 }
 
+/* ------------ Tablet navbar ------- */
+
+#nav-tablet .nav_tablet_header {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+#nav-tablet ul {
+    margin: 0px;
+    padding: 15px 30px;
+    list-style: none;
+    line-height: 2;
+}
+
+#nav-tablet ul li a{ 
+   text-decoration: none;
+   color: #333333;
+   font-weight: 500;
+   font-size: 16px;
+   font-family: "San Francisco Display Medium";
+}
+
+#nav-tablet ul li:hover a{ 
+    color: #3BB54A;
+}
+
+#wapper-tablet-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 1000;
+    width: 0px;
+    transition: all 0.25s ease-in-out;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 15px 0;
+    max-width: 450px;
+}
+
+#closePhoneMenu{
+    font-size: 30px;
+}
+
 /* ----------------------BANNER------------------------ */
 #banner {
     padding: 41px 0px 33px 0px;
@@ -160,12 +217,11 @@ header #navigation-desktop ul li a {
     background-color: #F3FFF9;
     background-repeat: no-repeat;
     padding-bottom: 200px;
+    position: relative;
+    /* margin-top: 130px; */
     /* background-position:center; */
 }
 
-#banner .wp-content{
-    position: relative;
-}
 
 #banner .btn-free-trial {
     font-family: "San Francisco Display Semibold";
@@ -206,9 +262,12 @@ header #navigation-desktop ul li a {
 
 
 #banner .banner-image {
+    max-width: 520px;
+    max-height: 420px;
     position: absolute;
-    right: -80px;
+    right: 17%;
     top: 40px;
+   
 }
 
 #banner .content {
@@ -228,6 +287,7 @@ header #navigation-desktop ul li a {
     font-size: 18px;
     line-height: 24px;
     color: #4F4F4F;
+    padding-right: 90px;
 }
 
 #banner .content p:nth-child(3) {
@@ -247,22 +307,6 @@ header #navigation-desktop ul li a {
     position: absolute;
     left: 0px;
 }
-
-
-/* #banner .btn-discover span{
-    
-} */
-
-
-
-#banner .row .content {
-    /* align-self: center; */
-}
-
-#banner .row .img-fluid {
-    /* align-self: center; */
-}
-
 
 /* ----------------------MAIN CONTENT------------------------ */
 /* --------vPOS mang đến giải pháp quản lý tối ưu như thế nào------ */
@@ -284,6 +328,11 @@ header #navigation-desktop ul li a {
     width: 100%;
     max-width: 843px;
     margin: 0px auto;
+}
+
+#services img {
+    width: 100%;
+    height: 100%;
 }
 
 #services .title span {
@@ -335,6 +384,7 @@ header #navigation-desktop ul li a {
 }
 
 
+
 /* ----------Tra cứu thuốc  và nhập liệu dễ dàng--------  */
 #services .search {
     background: #EEF6FC;
@@ -378,7 +428,6 @@ header #navigation-desktop ul li a {
     margin-left: 32px;
     display: inline-block;
 }
-
 
 
 /* ----------Quản lý đơn hàng và khách hàng--------  */
@@ -628,6 +677,9 @@ header #navigation-desktop ul li a {
     margin-right: 10px;
 }
 
+#supplies-tablet{
+    display: none;
+}
 
 /* -------------------Hệ thống thông báo chi tiết và đầy đủ-------------- */
 #report-system {
@@ -1154,3 +1206,67 @@ footer .social span:hover {
     animation-name: zoomIn;
   }
   
+
+/* -----------------Responsive------------- */
+@media (max-width: 1200px) {
+
+    .wp-content{
+        padding: 0px 30px;
+    }
+
+   #menu-destop{
+       display: none;
+   }
+
+   #menu-tablet{
+       display: block;
+   }
+
+   #menu-tablet .preHeader .search{
+       position: absolute;
+       right: 42px;
+       top: 14px; 
+       width: 30px;
+       height: 30px;
+   }
+
+   #menu-tablet .preHeader{
+        position: relative;
+   }
+
+   #menu-tablet .preHeader .btn-tablet{
+    position: absolute;
+    right: 0px;
+    top: 13px;
+    font-size: 28px;
+   }
+
+
+   #supplies-desktop{
+       display: none;
+   }
+
+   #supplies-tablet{
+        display: block;
+    }
+
+
+   header #menu-tablet {
+       display: block;
+   }
+
+   /* -------------banner--------- */
+   #banner .banner-image{
+       display: none;
+   }
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+
+@media (max-width: 768px) {
+
+}
