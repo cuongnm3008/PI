@@ -101,8 +101,10 @@ $('#backTop').click(function (e) {
 $(document).ready(function () {
     $(".btn-tablet").click(function () {
         $('#wapper-tablet-menu').attr('style', 'width: 450px ');
+        $('header .bg-overflow').attr('style', 'display: block ');
     });
     $("#closePhoneMenu").click(function () {
         $('#wapper-tablet-menu').attr('style', 'width: 0px ');
+        $('header .bg-overflow').attr('style', 'display: none ');
     });
 });

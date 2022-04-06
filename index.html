@@ -28,7 +28,8 @@
     <link rel="stylesheet" href="libs/css/global.css">
     <link rel="stylesheet" href="libs/css/style.css">
 
-
+      <!-- Aos js -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -81,6 +82,7 @@
                     </ul>
                 </nav>
             </div>
+            <div class="bg-overflow"></div>
             <div id="menu-tablet">
                 <div class="wp-content">
                     <div class="preHeader">
@@ -116,12 +118,16 @@
                         <li>
                             <a href="#">Khách hàng</a>
                         </li>
-                        <li>
+                        <li class="mb-2">
                             <a href="#">Ngành hàng</a>
                         </li>
-                        <button class="btn btn-login">Đăng nhập</button>
-                        <button class="btn btn-register">Đăng ký</button>
-                        <button class="btn btn-trial">Dùng thử</button>
+                    
+                           <div class="group-button">
+                            <button class="btn btn-register">Đăng ký</button>
+                            <button class="btn btn-login">Đăng nhập</button>
+                            <button class="btn btn-trial">Dùng thử</button>
+                           </div>
+                        
                     </ul>
                 </div>
             </div>
@@ -129,24 +135,23 @@
         <div id="banner">
             <div class="wp-content">
                 <div class="row">
-                    <div class="content col-lg-7 col-md-12">
-                        <h2>Phần mềm quản lý nhà thuốc</h2>
-                        <p>Quản lý nhà thuốc chuẩn GPP, theo dõi tồn kho, hạn dùng và doanh thu, lãi lỗ chính xác nhât
+                    <div class="content col-xl-7">
+                        <h2 data-aos="fade-left" data-aos-duration="800">Phần mềm quản lý nhà thuốc</h2>
+                        <p data-aos="fade-left" data-aos-duration="1000">Quản lý nhà thuốc chuẩn GPP, theo dõi tồn kho, hạn dùng và doanh thu, lãi lỗ chính xác nhât
                         </p>
-                        <p>Chính thức liên thông cơ sở dữ liệu Dược Quốc Gia</p>
-                        <button class="btn btn-free-trial">Dùng thử miễn phí</button>
-                        <button class="btn btn-discover">
-                            <img src="images/discover-icon.svg" alt="">
-                            <span>Khám phá VPOS</span>
-                        </button>
+                        <p data-aos="fade-left" data-aos-duration="1000"><img src="images/banner-icon-1.svg" alt=""> Chính thức liên thông cơ sở dữ liệu Dược Quốc Gia
+                        </p>
+                        <div class="group-button" data-aos="fade-left" data-aos-duration="1300">
+                            <button class="btn btn-free-trial">Dùng thử miễn phí</button>
+                            <button  class="btn btn-discover">
+                                <img src="images/discover-icon.svg" alt="">
+                                <span>Khám phá VPOS</span>
+                            </button>
+                        </div>
                     </div>
-
-                    <img class="img-fluid banner-image" src="images/banner-image.png" alt="">
-
+                    <img data-aos="fade-left" data-aos-duration="1500" class="img-fluid banner-image" src="images/banner-image.png" alt="">
                 </div>
-
             </div>
-
             <!-- <img src="" alt=""> -->
         </div>
         <main>
@@ -155,14 +160,15 @@
 
             <section id="services">
                 <div class="wp-content">
-                    <h2 class="title"><span>vPOS</span> mang đến giải pháp quản lý tối ưu như thế nào cho các cửa hàng
+                    <h2 class="title" data-aos="fade-up" data-aos-duration="1000"><span>vPOS</span> mang đến giải pháp quản lý tối ưu như thế nào cho các cửa hàng
                         thuốc?</h2>
                     <!-- ---Quản lý quầy và kho thuốc tập trung--- -->
 
-                    <div class="stock-manage">
+                    <div class="stock-manage" data-aos="fade-up" data-aos-duration="1200">
                         <div class="row">
                             <div class="col-lg-5">
-                                <img src="images/quan-ly-kho.png" alt="">
+                                <img class="desktop-image" src="images/quan-ly-kho.png" alt="">
+                                <img class="tablet-image" src="images/quan-ly-kho-tablet.png" alt="">
                             </div>
                             <div class="col-lg-7 content">
                                 <h3>Quản lý quầy và kho thuốc tập trung</h3>
@@ -191,7 +197,7 @@
                     </div>
 
                     <!-- -----Tra cứu thuốc  và nhập liệu dễ dàng----- -->
-                    <div class="search">
+                    <div class="search" data-aos="fade-up" data-aos-duration="1200">
                         <div class="row">
                             <div class="col-lg-7 content">
                                 <h3>Tra cứu thuốc và nhập liệu dễ dàng</h3>
@@ -213,16 +219,18 @@
                                     </span></p>
                             </div>
                             <div class="col-lg-5">
-                                <img src="images/tra-cuu-thuoc.png" alt="">
+                                <img class="desktop-image" src="images/tra-cuu-thuoc.png" alt="">
+                                <img class="tablet-image" src="images/tra-cuu-thuoc-tablet.png" alt="">
                             </div>
                         </div>
                     </div>
 
                     <!-- -------Quản lý đơn hàng và khách hàng----- -->
-                    <div class="order-manage">
+                    <div class="order-manage" data-aos="fade-up" data-aos-duration="1200">
                         <div class="row">
                             <div class="col-lg-5">
-                                <img src="images/order.png" alt="">
+                                <img class="desktop-image" src="images/order.png" alt="">
+                                <img class="tablet-image" src="images/order-tablet.png" alt="">
                             </div>
                             <div class="col-lg-7 content">
                                 <h3>Quản lý đơn hàng và khách hàng</h3>
@@ -248,7 +256,7 @@
 
 
                     <!-- --------Báo cáo nhanh với Cục quản lý Dược------ -->
-                    <div class="report">
+                    <div class="report" data-aos="fade-up" data-aos-duration="1200">
                         <div class="row">
                             <div class="col-lg-7 content">
                                 <h3>Báo cáo nhanh với Cục quản lý Dược</h3>
@@ -268,7 +276,8 @@
                                     </span></p>
                             </div>
                             <div class="col-lg-5">
-                                <img src="images/bao-cao.png" alt="">
+                                <img class="desktop-image" src="images/bao-cao.png" alt="">
+                                <img class="tablet-image" src="images/bao-cao-tablet.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -335,56 +344,45 @@
                     </div>
 
                     <div id="supplies-tablet" class="supplies row owl-carousel owl-theme">
-                       
-
-                            <div class="item">
-                                <img src="images/two-account.png" alt="">
-                                <h2>GÓI 12 THÁNG</h2>
-                                <p>Dành cho 2 tài khoản</p>
-                                <p><span>960.000</span> / tháng</p>
-                                <button class="btn btn-trial">
-                                    <p>Dùng thử</p>
-                                </button>
-                                <div class="content">
-                                    <p><i class="fa-solid fa-check"></i>Thời gian sử dụng: <span>12 tháng</span></p>
-                                    <p><i class="fa-solid fa-check"></i>Số tài khoản: <span>2 tài khoản</span></p>
-                                </div>
+                        <div class="item">
+                            <img src="images/two-account.png" alt="">
+                            <h2>GÓI 12 THÁNG</h2>
+                            <p>Dành cho 2 tài khoản</p>
+                            <p><span>960.000</span> / tháng</p>
+                            <button class="btn btn-trial">
+                                <p>Dùng thử</p>
+                            </button>
+                            <div class="content">
+                                <p><i class="fa-solid fa-check"></i>Thời gian sử dụng: <span>12 tháng</span></p>
+                                <p><i class="fa-solid fa-check"></i>Số tài khoản: <span>2 tài khoản</span></p>
                             </div>
-
-                       
-                      
-
-                            <div class="item">
-                                <img src="images/three-account.png" alt="">
-                                <h2>GÓI 12 THÁNG</h2>
-                                <p>Dành cho 2 tài khoản</p>
-                                <p><span>1.200.000</span> / tháng</p>
-                                <button class="btn btn-trial">
-                                    <p>Dùng thử</p>
-                                </button>
-                                <div class="content">
-                                    <p><i class="fa-solid fa-check"></i>Thời gian sử dụng: <span>12 tháng</span></p>
-                                    <p><i class="fa-solid fa-check"></i>Số tài khoản: <span>3 tài khoản</span></p>
-                                </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/three-account.png" alt="">
+                            <h2>GÓI 12 THÁNG</h2>
+                            <p>Dành cho 2 tài khoản</p>
+                            <p><span>1.200.000</span> / tháng</p>
+                            <button class="btn btn-trial">
+                                <p>Dùng thử</p>
+                            </button>
+                            <div class="content">
+                                <p><i class="fa-solid fa-check"></i>Thời gian sử dụng: <span>12 tháng</span></p>
+                                <p><i class="fa-solid fa-check"></i>Số tài khoản: <span>3 tài khoản</span></p>
                             </div>
-
-                       
-
-                            <div class="item">
-                                <img src="images/unlimited.png" alt="">
-                                <h2>GÓI 12 THÁNG</h2>
-                                <p>Dành cho 2 tài khoản</p>
-                                <p class="text-center"><span>1.200.000</span> / tháng</p>
-                                <button class="btn btn-trial">
-                                    <p>Dùng thử</p>
-                                </button>
-                                <div class="content">
-                                    <p><i class="fa-solid fa-check"></i>Thời gian sử dụng: <span>12 tháng</span></p>
-                                    <p><i class="fa-solid fa-check"></i>Số tài khoản: <span>Không giới hạn</span></p>
-                                </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/unlimited.png" alt="">
+                            <h2>GÓI 12 THÁNG</h2>
+                            <p>Dành cho 2 tài khoản</p>
+                            <p class="text-center"><span>1.200.000</span> / tháng</p>
+                            <button class="btn btn-trial">
+                                <p>Dùng thử</p>
+                            </button>
+                            <div class="content">
+                                <p><i class="fa-solid fa-check"></i>Thời gian sử dụng: <span>12 tháng</span></p>
+                                <p><i class="fa-solid fa-check"></i>Số tài khoản: <span>Không giới hạn</span></p>
                             </div>
-
-                       
+                        </div>
                     </div>
                 </div>
             </section>
@@ -393,27 +391,27 @@
             <!-- ----------Hệ thống thông báo chi tiết và đầy đủ----------- -->
             <section id="report-system">
                 <div class="wp-content">
-                    <h2 class="title">Hệ thống thông báo chi tiết và đầy đủ</h2>
+                    <h2 class="title" data-aos="fade-up" data-aos-duration="800">Hệ thống thông báo chi tiết và đầy đủ</h2>
                     <div class="content">
-                        <div class="item">
+                        <div class="item" data-aos="fade-up" data-aos-duration="1800">
                             <img src="images/bao-cao-kho.png" alt="">
                             <h3>Báo cáo kho</h3>
                             <p>Quản lý toàn bộ hệ thống thuốc và tồn kho thực tế chi tiết, kiểm soát dễ dàng với mã vạch
                                 và đồng bộ nhanh chóng, cập nhật theo từng giao dịch</p>
                         </div>
-                        <div class="item">
+                        <div class="item" data-aos="fade-up" data-aos-duration="1500">
                             <img src="images/bao-cao-nhap-hang.png" alt="">
                             <h3>Báo cáo nhập hàng</h3>
                             <p>Quản lý toàn bộ sản phẩm theo từng đợt nhập, nhà cung cấp và tự động quản lý theo lô -
                                 hạn sản xuất và đa dạng theo đơn vị tính.</p>
                         </div>
-                        <div class="item">
+                        <div class="item" data-aos="fade-up" data-aos-duration="1200">
                             <img src="images/bao-cao-ban-hang.png" alt="">
                             <h3>Báo cáo bán hàng</h3>
                             <p>Theo dõi toàn bộ doanh thu, lợi nhuận và hiệu quả kinh doanh ở từng thời điểm, mặt hàng
                                 và với từng nhân viên.</p>
                         </div>
-                        <div class="item">
+                        <div class="item" data-aos="fade-up" data-aos-duration="1000">
                             <img src="images/bao-cao-tai-chinh.png" alt="">
                             <h3>Báo cáo tài chính</h3>
                             <p>Quản lý và theo dõi toàn bộ báo cáo lãi lỗ và công nợ khách hàng, công nợ nhà cung cấp để
@@ -429,7 +427,7 @@
                     <h2>Cùng với đó, Phần mềm quản lý nhà thuốc <span>vPOS</span>
                         còn là <span>giải pháp quản lý tổng thể giúp...</span></h2>
                     <div class="content row">
-                        <div class="col-lg-6">
+                        <div class="col-md-6">
                             <ul class="tab_navigation">
                                 <li class="active">
                                     <h4>1. Quản lý chuỗi của hàng thuốc</h4>
@@ -450,7 +448,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-md-6">
                             <div id="slideshow" class="owl-carousel owl-theme">
                                 <div class="item tab_content">
                                     <img src="images/quan-ly-chuoi-cua-hang-thuoc.png" alt="">
@@ -471,7 +469,7 @@
             <!-- ----------------------Giải đáp những thắc mắc về  Phần mềm---------- -->
             <section id="answer">
                 <div class="wp-content">
-                    <div class="content col-lg-7">
+                    <div class="content col-xl-7 col-lg-10">
                         <h2>Giúp bạn giải đáp những thắc mắc về Phần mềm quản lý nhà thuốc <span>vPOS</span></h2>
                         <ul id="tabs">
                             <div class="item">
@@ -552,7 +550,7 @@
         </main>
         <footer>
             <div class="wp-content row">
-                <div class="col-lg-5">
+                <div class="col-lg-5 col-md-12">
                     <img class="img-fluid" src="images/footer-logo.png" alt="">
                     <p>vPOS - Giải pháp công nghệ 4.0 giúp quản lý chuỗi nhà thuốc toàn diện, hiệu quả, tiết kiệm chi
                         phí, góp phần nâng cao chất lượng khám chữa bệnh và hỗ trợ nhiều tiện ích chăm sóc sức khỏe cho
@@ -566,14 +564,14 @@
                         </span>
                     </div>
                 </div>
-                <div class="support col-lg-3">
+                <div class="support col-lg-3 col-sm-6">
                     <h3>Hỗ trợ khách hàng</h3>
                     <p><img src="images/dieu-khoan-icon.svg" alt=""> Điều khoản bảo mật</p>
                     <p><img src="images/chinh-sach-icon.svg" alt=""> Chính sách bảo mật</p>
                     <p><img src="images/payment-method-icon.svg" alt=""> Hình thức thanh toán</p>
                     <p><img src="images/cau-hoi-thuong-gap-icon.svg" alt=""> Câu hỏi thường gặp</p>
                 </div>
-                <div class="contact col-lg-4">
+                <div class="contact col-lg-4 col-sm-6">
                     <h3>Liên hệ</h3>
                     <p>Công Ty TNHH Orenda</p>
                     <p><span>GPKD:</span> 0109143493 – cấp ngày 25/3/2020</p>
@@ -614,5 +612,15 @@
 
 <!-- manual js  -->
 <script src="libs/js/main.js"></script>
+<!-- Aos js -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    $(document).ready(function () {
+      AOS.init({
+        once: true,
+      });
+    });
+  </script>
 
 </html>

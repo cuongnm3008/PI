@@ -65,10 +65,20 @@ body, html {
     width:100%; 
     max-width: 1140px ;
     padding: 0px 15px;
-    /* background-color: antiquewhite; */
 }
 
 
 .clear-both {
     clear: both;
+}
+
+.bg-overflow {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 9;
 }
