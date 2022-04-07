@@ -1,1815 +1,1525 @@
-
+@charset "UTF-8";
 @font-face {
-    font-family: "San Francisco Display Black";
-    src: url(../fonts/SanFranciscoDisplay-Black.ttf);
+  font-family: "San Francisco Display Black";
+  src: url(../fonts/SanFranciscoDisplay-Black.ttf);
 }
 
 @font-face {
-    font-family: "San Francisco Display Bold";
-    src: url(../fonts/SanFranciscoDisplay-Bold.ttf);
+  font-family: "San Francisco Display Bold";
+  src: url(../fonts/SanFranciscoDisplay-Bold.ttf);
 }
 
 @font-face {
-    font-family: "San Francisco Display Heavy";
-    src: url(../fonts/SanFranciscoDisplay-Heavy.ttf);
+  font-family: "San Francisco Display Heavy";
+  src: url(../fonts/SanFranciscoDisplay-Heavy.ttf);
 }
 
 @font-face {
-    font-family: "San Francisco Display Light";
-    src: url(../fonts/SanFranciscoDisplay-Light.ttf);
+  font-family: "San Francisco Display Light";
+  src: url(../fonts/SanFranciscoDisplay-Light.ttf);
 }
 
 @font-face {
-    font-family: "San Francisco Display Medium";
-    src: url(../fonts/SanFranciscoDisplay-Medium.ttf);
+  font-family: "San Francisco Display Medium";
+  src: url(../fonts/SanFranciscoDisplay-Medium.ttf);
 }
 
 @font-face {
-    font-family: "San Francisco Display Regular";
-    src: url(../fonts/SanFranciscoDisplay-Regular.ttf);
+  font-family: "San Francisco Display Regular";
+  src: url(../fonts/SanFranciscoDisplay-Regular.ttf);
 }
 
 @font-face {
-    font-family: "San Francisco Display Semibold";
-    src: url(../fonts/SanFranciscoDisplay-Semibold.ttf);
+  font-family: "San Francisco Display Semibold";
+  src: url(../fonts/SanFranciscoDisplay-Semibold.ttf);
 }
 
 @font-face {
-    font-family: "San Francisco Display Thin";
-    src: url(../fonts/SanFranciscoDisplay-Thin.ttf);
+  font-family: "San Francisco Display Thin";
+  src: url(../fonts/SanFranciscoDisplay-Thin.ttf);
 }
 
 @font-face {
-    font-family: "San Francisco Display Ultralight";
-    src: url(../fonts/SanFranciscoDisplay-Ultralight.ttf);
+  font-family: "San Francisco Display Ultralight";
+  src: url(../fonts/SanFranciscoDisplay-Ultralight.ttf);
+}
+
+@-webkit-keyframes btnDiscover {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+  }
+}
+
+@keyframes btnDiscover {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+  }
+}
+
+@-webkit-keyframes zoomIn {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
 /* ----------------------HEADER------------------------ */
+header {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  padding: 25px 0px 15px 0px;
+  margin-bottom: 1px;
+}
+
+header .btn-login {
+  font-family: "San Francisco Display Bold";
+  border: 2px solid #34AC3D;
+  border-radius: 6px;
+  width: 133px;
+  height: 40px;
+  color: #34AC3D;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  float: right;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+header .btn-register {
+  font-family: "San Francisco Display Bold";
+  background: #34AC3D;
+  width: 133px;
+  height: 40px;
+  border-radius: 6px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  float: right;
+  margin-right: 16px;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+header .btn-register:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#3bb54a), to(#7ec341));
+  background: linear-gradient(90deg, #3bb54a 0%, #7ec341 100%);
+  color: #FFFFFF;
+}
+
+header .btn-trial {
+  font-family: "San Francisco Display Bold";
+  background: #EA8932;
+  border-radius: 6px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 12px;
+  width: 101px;
+  height: 32px;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
 
 /* -------------Pre-header-------------- */
-header {
-    background-color: #FFFFFF;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
-    padding: 25px 0px 15px 0px;
-    margin-bottom: 1px;
-    /* position: fixed; */
-    /* top: 0; */
-    /* z-index: 9999; */
-    /* max-width: 1920px; */
-    /* width: 100%; */
+.preHeader form {
+  width: 360px;
+  height: 36px;
+  position: relative;
 }
 
-header .preHeader .input-group {
-    width: 360px;
-    height: 36px;
+.preHeader form input {
+  font-weight: 400;
+  font-size: 15px;
+  color: #BDBDBD;
 }
 
-header .preHeader .input-group input {
-    font-weight: 400;
-    font-size: 15px;
-    color: #BDBDBD;
-}
-header .preHeader .input-group input:focus {
-    box-shadow: none;
-    border-color: #34AC3D;
+.preHeader form input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #34AC3D;
 }
 
-header .preHeader .input-group button {
-    position: absolute;
-    right: 0px;
-    z-index: 999;
-    box-shadow: none;
+.preHeader form button {
+  position: absolute;
+  right: 0px;
+  top: -1px;
+  z-index: 999;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
-header .preHeader .btn-login {
-    font-family: "San Francisco Display Bold";
-    border: 2px solid #34AC3D;
-    border-radius: 6px;
-    width: 133px;
-    height: 40px;
-    color: #34AC3D;
-    font-weight: 700;
-    font-size: 15px;
-    text-transform: uppercase;
-    float: right;
-    box-shadow: none;
-}
-
-header .preHeader .btn-register {
-    font-family: "San Francisco Display Bold";
-    background: #34AC3D;
-    width: 133px;
-    height: 40px;
-    border-radius: 6px;
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 15px;
-    text-transform: uppercase;
-    float: right;
-    margin-right: 16px;
-    box-shadow: none;
-}
-header .preHeader .btn-register:hover{
-    background: linear-gradient(90deg, #3bb54a 0%, #7ec341 100%);
-}
-
-header #menu-tablet{
-    display: none;
-}
-
-header .preHeader .authen-author {
-    display: inline-block;
+.preHeader .authen-author {
+  display: inline-block;
 }
 
 /* -------------Navigation-------------- */
-header #navigation-desktop {
-    margin-top: 10px;
+/* ------------ Desktop navbar ------- */
+#navigation-desktop {
+  margin-top: 10px;
 }
 
-
-header #navigation-desktop ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+#navigation-desktop ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-header #navigation-desktop ul li {
-    display: inline;
-    flex-grow: 1;
+#navigation-desktop li {
+  display: inline;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
-header #navigation-desktop ul li:nth-last-child(2) {
-    flex-grow: 2;
+#navigation-desktop li:nth-last-child(2) {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 
-header #navigation-desktop ul .btn-trial {
-    font-family: "San Francisco Display Bold";
-    background: #EA8932;
-    border-radius: 6px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 12px;
-    width: 101px;
-    height: 32px;
-    box-shadow: none;
-}
-header #navigation-desktop ul .btn-trial:hover{
-    background: linear-gradient(90deg, #EA8932 0%, #e0b75e 100%);
-}
-header #navigation-desktop ul li a {
-    font-family: "San Francisco Display Medium";
-    text-decoration: none;
-    color: #333333;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 30px;
-    display: inline-block;
+#navigation-desktop .btn-trial:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#EA8932), to(#e0b75e));
+  background: linear-gradient(90deg, #EA8932 0%, #e0b75e 100%);
+  color: #FFFFFF !important;
 }
 
-header #navigation-desktop ul li a:hover{
-    color: #34AC3D;
+#navigation-desktop a {
+  font-family: "San Francisco Display Medium";
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  display: inline-block;
+}
+
+#navigation-desktop a:hover {
+  color: #34AC3D;
+}
+
+.nav_tablet_header {
+  padding: 12px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #e3e3e3;
 }
 
 /* ------------ Tablet navbar ------- */
-
-#nav-tablet .nav_tablet_header {
-    padding: 12px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #e3e3e3;
+#menu-tablet {
+  display: none;
 }
 
 #nav-tablet ul {
-    margin: 0px;
-    padding: 15px 30px;
-    list-style: none;
-    line-height: 2;
+  margin: 0px;
+  padding: 15px 30px;
+  list-style: none;
+  line-height: 2;
 }
 
-#nav-tablet ul li a{ 
-   text-decoration: none;
-   color: #333333;
-   font-weight: 500;
-   font-size: 18px;
-   font-family: "San Francisco Display Medium";
+#nav-tablet ul li a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "San Francisco Display Medium";
 }
 
-#nav-tablet ul li:hover a{ 
-    color: #3BB54A;
+#nav-tablet ul li:hover a {
+  color: #3BB54A;
 }
 
-#nav-tablet .btn-login{
-    font-family: "San Francisco Display Bold";
-    border: 2px solid #34AC3D;
-    border-radius: 6px;
-    width: 133px;
-    height: 40px;
-    color: #34AC3D;
-    font-weight: 700;
-    font-size: 15px;
-    text-transform: uppercase;
-    float: right;
-    box-shadow: none;
-    margin: 5px;
+#nav-tablet .btn-login {
+  float: right;
+  margin: 5px;
 }
 
 #nav-tablet .btn-register {
-    font-family: "San Francisco Display Bold";
-    background: #34AC3D;
-    width: 133px;
-    height: 40px;
-    border-radius: 6px;
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 15px;
-    text-transform: uppercase;
-    float: right;
-    box-shadow: none;
-    margin: 5px;
+  float: right;
+  margin: 5px;
 }
 
 #nav-tablet .btn-trial {
-    font-family: "San Francisco Display Bold";
-    background: #EA8932;
-    border-radius: 6px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 16px;
-    width: 133px;
-    height: 40px;
-    box-shadow: none;
-    margin: 5px;
-}
-#nav-tablet .group-button{
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-around; */
-}
-#wapper-tablet-menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #fff;
-    z-index: 1000;
-    width: 0px;
-    transition: all 0.25s ease-in-out;
-    font-size: 18px;
-    line-height: 24px;
-    padding: 15px 0;
-    max-width: 450px;
+  width: 133px;
+  height: 40px;
+  font-size: 15px;
+  margin: 5px;
+  color: #FFFFFF;
 }
 
-#closePhoneMenu{
-    font-size: 30px;
+#nav-tablet .btn-trial:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#EA8932), to(#e0b75e));
+  background: linear-gradient(90deg, #EA8932 0%, #e0b75e 100%);
+  color: #FFFFFF !important;
+}
+
+#nav-tablet .group-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#wapper-tablet-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #FFFFFF;
+  z-index: 1000;
+  width: 0px;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 15px 0;
+  max-width: 450px;
+}
+
+#closePhoneMenu {
+  font-size: 30px;
 }
 
 /* ----------------------BANNER------------------------ */
 #banner {
-    padding: 41px 0px 33px 0px;
-    background-image: url("../background-images/banner-background.png");
-    background-color: #F3FFF9;
-    background-repeat: no-repeat;
-    padding-bottom: 200px;
-    position: relative;
-    /* margin-top: 130px; */
-    /* background-position:center; */
+  padding: 41px 0px 33px 0px;
+  background-image: url("../images/banner-background.png");
+  background-color: #F3FFF9;
+  background-repeat: no-repeat;
+  padding-bottom: 200px;
+  position: relative;
 }
-
 
 #banner .btn-free-trial {
-    font-family: "San Francisco Display Semibold";
-    font-weight: 600;
-    color: #FFFFFF;
-    width: 242px;
-    height: 54px;
-    background: #34AC3D;
-    border-radius: 6px;
-    margin-right: 15px;
-    font-size: 20px;
-    box-shadow: none;
+  font-family: "San Francisco Display Semibold";
+  font-weight: 600;
+  color: #FFFFFF;
+  width: 242px;
+  height: 54px;
+  background: #34AC3D;
+  border-radius: 6px;
+  margin-right: 15px;
+  font-size: 20px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-#banner .btn-free-trial:hover{
-    background: linear-gradient(90deg, #34AC3D 0%, #7ec341 100%);
+#banner .btn-free-trial:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#34AC3D), to(#7ec341));
+  background: linear-gradient(90deg, #34AC3D 0%, #7ec341 100%);
 }
-
-
-/* #banner .btn-discover::before{
-    content: url(..//../images/discover-icon.svg);
-    position: absolute;
-    right: 0px;
-} */
 
 #banner .btn-discover {
-    font-family: "San Francisco Display Semibold";
-    font-weight: 600;
-    border: 2px solid #34AC3D;
-    border-radius: 6px;
-    width: 242px;
-    height: 54px;
-    color: #34AC3D;
-    text-align: center;
-    font-size: 20px;
-    box-shadow: none;
-    animation: btnDiscover .5s infinite alternate;
-    transition: all .2s ease-out;
+  font-family: "San Francisco Display Semibold";
+  font-weight: 600;
+  border: 2px solid #34AC3D;
+  border-radius: 6px;
+  width: 242px;
+  height: 54px;
+  color: #34AC3D;
+  text-align: center;
+  font-size: 20px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-animation: btnDiscover .5s infinite alternate;
+          animation: btnDiscover .5s infinite alternate;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
 }
 
 #banner .btn-discover img {
-    margin-right: 5px;
+  margin-right: 5px;
 }
-
-@keyframes btnDiscover{
-    0% {
-        transform: scale(1,1);
-    }
-
-    100% {
-        transform: scale(1.05,1.05);
-    }
-}
-
 
 #banner .banner-image {
-    max-width: 520px;
-    max-height: 420px;
-    position: absolute;
-    right: 17%;
-    top: 40px;
-   
+  max-width: 520px;
+  max-height: 420px;
+  position: absolute;
+  right: 17%;
+  top: 40px;
 }
 
 #banner .content {
-    padding-top: 70px;
+  padding-top: 70px;
 }
 
 #banner .content h2 {
-    font-family: "San Francisco Display Bold";
-    font-weight: 800;
-    font-size: 42px;
-    color: #0F499F;
+  font-family: "San Francisco Display Bold";
+  font-weight: 800;
+  font-size: 42px;
+  color: #0F499F;
 }
 
 #banner .content p:nth-child(2) {
-    font-family: "San Francisco Display Regular";
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    color: #4F4F4F;
-    padding-right: 90px;
+  font-family: "San Francisco Display Regular";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #4F4F4F;
+  padding-right: 90px;
 }
 
 #banner .content p:nth-child(3) {
-    font-family: "San Francisco Display Semibold";
-    font-style: italic;
-    position: relative;
-    color: #FF9638;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 36px;
+  font-family: "San Francisco Display Semibold";
+  font-style: italic;
+  position: relative;
+  color: #FF9638;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 36px;
 }
 
 #banner .content p:nth-child(3) img {
-    margin-right: 10px;
+  margin-right: 10px;
 }
-
-/* #banner .content p:nth-child(3)::before {
-    content: url('../../images/banner-icon-1.svg');
-    position: absolute;
-    left: 0px;
-} */
 
 /* ----------------------MAIN CONTENT------------------------ */
 /* --------vPOS mang đến giải pháp quản lý tối ưu như thế nào------ */
 #services {
-    padding-top: 60px;
-    background-color: #FFFFFF;
-    background-image: url('../background-images/services-background.png');
-    background-position-y: 108px;
-    padding-bottom: 51px;
-    background-repeat: no-repeat;
+  padding-top: 60px;
+  background-color: #FFFFFF;
+  background-image: url("../images/services-background.png");
+  background-position-y: 108px;
+  padding-bottom: 51px;
+  background-repeat: no-repeat;
 }
 
 #services .title {
-    font-family: "San Francisco Display Bold";
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 54px;
-    text-align: center;
-    width: 100%;
-    max-width: 843px;
-    margin: 0px auto;
-}
-
-#services img {
-    width: 100%;
-    height: 100%;
-}
-
-#services .tablet-image{
-    display: none;
+  font-family: "San Francisco Display Bold";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
+  width: 100%;
+  max-width: 843px;
+  margin: 0px auto;
 }
 
 #services .title span {
-    color: #34AC3D;
+  color: #34AC3D;
 }
 
-
-/* ----------Quản lý quầy và kho thuốc tập trung--------  */
-#services .stock-manage {
-    background: #F0FAEB;
-    border-radius: 20px;
-    margin: 36px 0px 40px 0px;
+#services img {
+  width: 100%;
+  height: 100%;
 }
 
-#services .stock-manage .content {
-    padding: 0px 50px 0px 30px;
+#services .tablet-image {
+  display: none;
 }
-
-#services .stock-manage .content h3 {
-    font-family: "San Francisco Display Bold";
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    color: #34AC3D;
-    margin: 36px 0px 20px 0px;
-}
-
-#services .stock-manage .content p {
-    font-family: "San Francisco Display Medium";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #4F4F4F;
-    position: relative;
-}
-
-
-#services .stock-manage .content p i {
-    color: #34AC3D;
-    margin-right: 5px;
-    position: absolute;
-    top: 8px;
-    font-size: 20px;
-}
-
-#services .stock-manage .content p span {
-    margin-left: 32px;
-    display: inline-block;
-}
-
-
-
-/* ----------Tra cứu thuốc  và nhập liệu dễ dàng--------  */
-#services .search {
-    background: #EEF6FC;
-    border-radius: 20px;
-    margin: 36px 0px 40px 0px;
-}
-
-#services .search .content {
-    padding: 0px 40px 0px 39px;
-}
-
-#services .search .content h3 {
-    font-family: "San Francisco Display Bold";
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    color: #2FA8E9;
-    margin: 36px 0px 20px 0px;
-}
-
-
-#services .search .content p {
-    font-family: "San Francisco Display Medium";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #4F4F4F;
-    position: relative;
-}
-
-
-#services .search .content p i {
-    color: #2FA8E9;
-    margin-right: 5px;
-    position: absolute;
-    top: 8px;
-    font-size: 20px;
-}
-
-#services .search .content p span {
-    margin-left: 32px;
-    display: inline-block;
-}
-
-
-/* ----------Quản lý đơn hàng và khách hàng--------  */
-#services .order-manage {
-    background: #FFF3F1;
-    border-radius: 20px;
-    margin: 36px 0px 40px 0px;
-}
-
-#services .order-manage .content {
-    padding: 0px 50px 0px 30px;
-}
-
-#services .order-manage .content h3 {
-    font-family: "San Francisco Display Bold";
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    color: #FD3521;
-    margin: 36px 0px 20px 0px;
-}
-
-
-#services .order-manage .content p {
-    font-family: "San Francisco Display Medium";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #4F4F4F;
-    position: relative;
-}
-
-
-#services .order-manage .content p i {
-    color: #FD3521;
-    margin-right: 5px;
-    position: absolute;
-    top: 3px;
-    font-size: 20px;
-}
-
-#services .order-manage .content p span {
-    margin-left: 32px;
-    display: inline-block;
-}
-
-
-/* ----------Báo cáo nhanh với Cục quản lý Dược--------  */
-#services .report {
-    background: #FFF9EE;
-    border-radius: 20px;
-    margin: 36px 0px 40px 0px;
-}
-
-#services .report .content {
-    padding: 0px 40px 0px 39px;
-}
-
-#services .report .content h3 {
-    font-family: "San Francisco Display Bold";
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    color: #282828;
-    margin: 36px 0px 20px 0px;
-}
-
-#services .report .content p {
-    font-family: "San Francisco Display Medium";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #4F4F4F;
-    position: relative;
-}
-
-
-#services .report .content p i {
-    color: #FFB122;
-    margin-right: 5px;
-    position: absolute;
-    top: 8px;
-    font-size: 20px;
-}
-
-#services .report .content p span {
-    margin-left: 32px;
-    display: inline-block;
-}
-
 
 #services .btn-free-trial {
-    font-family: "San Francisco Display Bold";
-    width: 242px;
-    height: 54px;
-    background: linear-gradient(90deg, #3BB54A 0%, #7EC341 100%);
-    border-radius: 4px;
-    color: #FFFFFF;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
-    display: block;
-    margin: 41px auto 0px auto;
-    box-shadow: none;
-}
-#services .btn-free-trial:hover{
-    background: linear-gradient(90deg, #46994d 0%, #8ec060 100%);
+  font-family: "San Francisco Display Bold";
+  width: 242px;
+  height: 54px;
+  background: -webkit-gradient(linear, left top, right top, from(#3BB54A), to(#7EC341));
+  background: linear-gradient(90deg, #3BB54A 0%, #7EC341 100%);
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  display: block;
+  margin: 41px auto 0px auto;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
+#services .btn-free-trial:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#46994d), to(#8ec060));
+  background: linear-gradient(90deg, #46994d 0%, #8ec060 100%);
+}
 
+/* ----------Quản lý quầy và kho thuốc tập trung--------  */
+.stock-manage {
+  background: #F0FAEB;
+  border-radius: 20px;
+  margin: 36px 0px 40px 0px;
+}
+
+.stock-manage .content {
+  padding: 0px 50px 0px 30px;
+}
+
+.stock-manage .content h3 {
+  font-family: "San Francisco Display Bold";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #34AC3D;
+  margin: 36px 0px 20px 0px;
+}
+
+.stock-manage .content p {
+  font-family: "San Francisco Display Medium";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4F4F4F;
+  position: relative;
+}
+
+.stock-manage .content p i {
+  color: #34AC3D;
+  margin-right: 5px;
+  position: absolute;
+  top: 8px;
+  font-size: 20px;
+}
+
+.stock-manage .content p span {
+  margin-left: 32px;
+  display: inline-block;
+}
+
+/* ----------Tra cứu thuốc  và nhập liệu dễ dàng--------  */
+.search {
+  background: #EEF6FC;
+  border-radius: 20px;
+  margin: 36px 0px 40px 0px;
+}
+
+.search .content {
+  padding: 0px 40px 0px 39px;
+}
+
+.search .content h3 {
+  font-family: "San Francisco Display Bold";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #2FA8E9;
+  margin: 36px 0px 20px 0px;
+}
+
+.search .content p {
+  font-family: "San Francisco Display Medium";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4F4F4F;
+  position: relative;
+}
+
+.search .content p i {
+  color: #2FA8E9;
+  margin-right: 5px;
+  position: absolute;
+  top: 8px;
+  font-size: 20px;
+}
+
+.search .content p span {
+  margin-left: 32px;
+  display: inline-block;
+}
+
+/* ----------Quản lý đơn hàng và khách hàng--------  */
+.order-manage {
+  background: #FFF3F1;
+  border-radius: 20px;
+  margin: 36px 0px 40px 0px;
+}
+
+.order-manage .content {
+  padding: 0px 50px 0px 30px;
+}
+
+.order-manage .content h3 {
+  font-family: "San Francisco Display Bold";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FD3521;
+  margin: 36px 0px 20px 0px;
+}
+
+.order-manage .content p {
+  font-family: "San Francisco Display Medium";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4F4F4F;
+  position: relative;
+}
+
+.order-manage .content p i {
+  color: #FD3521;
+  margin-right: 5px;
+  position: absolute;
+  top: 3px;
+  font-size: 20px;
+}
+
+.order-manage .content p span {
+  margin-left: 32px;
+  display: inline-block;
+}
+
+/* ----------Báo cáo nhanh với Cục quản lý Dược--------  */
+.report {
+  background: #FFF9EE;
+  border-radius: 20px;
+  margin: 36px 0px 40px 0px;
+}
+
+.report .content {
+  padding: 0px 40px 0px 39px;
+}
+
+.report .content h3 {
+  font-family: "San Francisco Display Bold";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #282828;
+  margin: 36px 0px 20px 0px;
+}
+
+.report .content p {
+  font-family: "San Francisco Display Medium";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4F4F4F;
+  position: relative;
+}
+
+.report .content p i {
+  color: #FFB122;
+  margin-right: 5px;
+  position: absolute;
+  top: 8px;
+  font-size: 20px;
+}
+
+.report .content p span {
+  margin-left: 32px;
+  display: inline-block;
+}
 
 /* --------------Bảng giá phần mềm quản lý bán hàng---------------- */
 #priceboard {
-    background-image: url('..//background-images/priceboard-bg.png');
-    background-repeat: no-repeat;
-    background-color: #FFFFFF;
+  background-image: url("..//images/priceboard-bg.png");
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
 }
 
-
-#priceboard .wp-content .introduction {
-    margin-bottom: 40px;
+#priceboard .introduction {
+  margin-bottom: 40px;
 }
 
-#priceboard .wp-content .introduction h2 {
-    font-family: "San Francisco Display Bold";
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 54px;
-    color: #333333;
-    padding-top: 60px;
+#priceboard .introduction h2 {
+  font-family: "San Francisco Display Bold";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  color: #333333;
+  padding-top: 60px;
 }
 
-#priceboard .wp-content .introduction p {
-    font-family: "San Francisco Display Medium";
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    color: #828282;
+#priceboard .introduction p {
+  font-family: "San Francisco Display Medium";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #828282;
 }
 
-#priceboard .supplies .item {
-    background: #FFFFFF;
-    border: 1px solid #BDBDBD;
-    box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.05);
-    border-radius: 16px;
-    width: 360px;
-    height: 459px;
-    text-align: center;
+.supplies .item {
+  background: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  -webkit-box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  width: 360px;
+  height: 459px;
+  text-align: center;
 }
 
-#priceboard .supplies .item img {
-    display: block;
-    margin: 40px auto 30px auto;
-    width: auto;
-    height: auto;
+.supplies .item img {
+  display: block;
+  margin: 40px auto 30px auto;
+  width: auto;
+  height: auto;
 }
 
-#priceboard .supplies .item h2 {
-    font-family: "San Francisco Display Bold";
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 38px;
-    color: #333333;
+.supplies .item h2 {
+  font-family: "San Francisco Display Bold";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  color: #333333;
 }
 
-
-#priceboard .supplies .item p:nth-child(3) {
-    font-family: "San Francisco Display Medium";
-    color: #828282;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+.supplies .item p:nth-child(3) {
+  font-family: "San Francisco Display Medium";
+  color: #828282;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
 }
 
-#priceboard .supplies .item p:nth-child(4) {
-    font-family: "San Francisco Display Regular";
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 33px;
-    color: #4F4F4F;
+.supplies .item p:nth-child(4) {
+  font-family: "San Francisco Display Regular";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+  color: #4F4F4F;
 }
 
-
-#priceboard .supplies .item p:nth-child(4) span {
-    font-family: "San Francisco Display Bold";
-    color: #EA8932;
-    font-weight: 700;
-    font-size: 37px;
-    line-height: 44px;
-    margin-right: 15px;
-    position: relative;
+.supplies .item p:nth-child(4) span {
+  font-family: "San Francisco Display Bold";
+  color: #EA8932;
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 44px;
+  margin-right: 15px;
+  position: relative;
 }
 
-#priceboard .supplies .item p:nth-child(4) span::after {
-    content: "đ";
-    font-family: "San Francisco Display Bold";
-    color: #EA8932;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 44px;
-    position: absolute;
+.supplies .item p:nth-child(4) span::after {
+  content: "đ";
+  font-family: "San Francisco Display Bold";
+  color: #EA8932;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 44px;
+  position: absolute;
 }
 
-#priceboard .supplies .item .btn-trial {
-    width: 179px;
-    height: 54px;
-    background: linear-gradient(90deg, #3BB54A 0%, #7EC341 100%);
-    border-radius: 4px;
-    margin-bottom: 25px;
-    font-family: "San Francisco Display Semibold";
-    font-weight: 600;
-    box-shadow: none;
+.supplies .item .btn-trial {
+  width: 179px;
+  height: 54px;
+  background: -webkit-gradient(linear, left top, right top, from(#3BB54A), to(#7EC341));
+  background: linear-gradient(90deg, #3BB54A 0%, #7EC341 100%);
+  border-radius: 4px;
+  margin-bottom: 25px;
+  font-family: "San Francisco Display Semibold";
+  font-weight: 600;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-#priceboard .supplies .item .btn-trial:hover{
-    background: linear-gradient(90deg, #46994d 0%, #8ec060 100%);
+.supplies .item .btn-trial:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#46994d), to(#8ec060));
+  background: linear-gradient(90deg, #46994d 0%, #8ec060 100%);
 }
 
-#priceboard .supplies .item .btn-trial p {
-    line-height: 30px;
-    font-size: 20px;
-    color: #FFFFFF;
-    margin: 0px;
-    position: relative;
-    margin-left: -33px;
+.supplies .item .btn-trial p {
+  line-height: 30px;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin: 0px;
+  position: relative;
+  margin-left: -33px;
 }
 
-#priceboard .supplies .item .btn-trial p::after {
-    content: url('../../images/arrow-right.svg');
-    position: absolute;
-    right: 20px;
-    text-align: center;
+.supplies .item .btn-trial p::after {
+  content: url("../../images/arrow-right.svg");
+  position: absolute;
+  right: 20px;
+  text-align: center;
 }
 
-#priceboard .supplies .item .content {
-    margin: 0px auto;
-    width: 250px;
-    text-align: left;
-
+.supplies .item .content {
+  margin: 0px auto;
+  width: 250px;
+  text-align: left;
 }
 
-#priceboard .supplies .item .content p {
-    font-family: "San Francisco Display Medium";
-    font-weight: 500;
-    font-size: 16px;
-    color: #828282;
+.supplies .item .content p {
+  font-family: "San Francisco Display Medium";
+  font-weight: 500;
+  font-size: 16px;
+  color: #828282;
 }
 
-#priceboard .supplies .item .content p i {
-    color: #34AC3D;
-    margin-right: 10px;
+.supplies .item .content p i {
+  color: #34AC3D;
+  margin-right: 10px;
 }
 
-#priceboard .supplies .item .content p span {
-    color: #333333;
-    margin-right: 10px;
+.supplies .item .content p span {
+  color: #333333;
+  margin-right: 10px;
 }
 
-#supplies-tablet{
-    display: none;
+#supplies-tablet {
+  display: none;
 }
 
 /* -------------------Hệ thống thông báo chi tiết và đầy đủ-------------- */
 #report-system {
-    background-image: url('../background-images/system-report-bg.png');
-    background-repeat: no-repeat;
-    padding-bottom: 80px;
-    background-color: #FFFFFF;
-    margin-top: -30px;
+  background-image: url("../images/system-report-bg.png");
+  background-repeat: no-repeat;
+  padding-bottom: 80px;
+  background-color: #FFFFFF;
+  margin-top: -30px;
 }
 
 #report-system .content {
-    display: flex;
-    justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #report-system .content .item {
-    width: 23%;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    text-align: center;
-    margin: 0px 5px;
-    padding: 10px;
-    height: 330px;
+  width: 23%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  text-align: center;
+  margin: 0px 5px;
+  padding: 10px;
+  height: 330px;
 }
 
 #report-system .content .item h3 {
-    font-family: "San Francisco Display Bold";
-    color: #000000;
-    font-weight: 700;
-    font-size: 18px;
-    margin-top: 30px;
+  font-family: "San Francisco Display Bold";
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 30px;
 }
 
 #report-system .content .item p {
-    font-family: "San Francisco Display Regular";
-    font-weight: 400;
-    font-size: 15px;
-    color: #333333;
-    padding: 5px;
+  font-family: "San Francisco Display Regular";
+  font-weight: 400;
+  font-size: 15px;
+  color: #333333;
+  padding: 5px;
 }
 
 #report-system .content .item:nth-child(1) {
-   margin-top: 215px;
+  margin-top: 215px;
 }
+
 #report-system .content .item:nth-child(2) {
-    margin-top: 76px;
- }
- #report-system .content .item:nth-child(3) {
-    margin-top: 143px;
- }
- #report-system .content .item:nth-child(4) {
-    margin-top: -48px;
- }
+  margin-top: 76px;
+}
+
+#report-system .content .item:nth-child(3) {
+  margin-top: 143px;
+}
+
+#report-system .content .item:nth-child(4) {
+  margin-top: -48px;
+}
 
 #report-system .content .item img {
-    display: block;
-    margin: 0px auto;
+  display: block;
+  margin: 0px auto;
 }
 
 #report-system h2 {
-    font-family: "San Francisco Display Bold";
-    padding-top: 268px;
-    font-weight: 700;
-    font-size: 40px;
-    color: #FFFFFF;
+  font-family: "San Francisco Display Bold";
+  padding-top: 268px;
+  font-weight: 700;
+  font-size: 40px;
+  color: #FFFFFF;
 }
 
 #report-system .btn-free-trial {
-    font-family: "San Francisco Display Semibold";
-    color: #FFFFFF;
-    width: 261px;
-    height: 54px;
-    background: #F8BC1E;
-    border-radius: 4px;
-    display: block;
-    margin: 0px auto;
-    margin-top: 50px;
-    font-weight: 600;
-    font-size: 20px;
-    box-shadow: none;
+  font-family: "San Francisco Display Semibold";
+  color: #FFFFFF;
+  width: 261px;
+  height: 54px;
+  background: #F8BC1E;
+  border-radius: 4px;
+  display: block;
+  margin: 0px auto;
+  margin-top: 50px;
+  font-weight: 600;
+  font-size: 20px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-#report-system .btn-free-trial:hover{
-    background: linear-gradient(90deg, #F8BC1E 0%, #dab865 100%);
+#report-system .btn-free-trial:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#F8BC1E), to(#dab865));
+  background: linear-gradient(90deg, #F8BC1E 0%, #dab865 100%);
 }
 
 /* -----------------------Giải pháp quản lý tổng thể---------------  */
-
 #solution {
-    background-image: url('../background-images/solution-bg.png');
-    background-color: #FFFFFF;
-    padding-bottom: 20px;
+  background-image: url("../images/solution-bg.png");
+  background-color: #FFFFFF;
+  padding-bottom: 20px;
 }
 
-#solution .mobile.content{
-    display: none;
+#solution .mobile.content {
+  display: none;
 }
 
-#solution img{
-    width: 100%;
-    margin: 0px auto;
-}
-#solution h2{
-    font-family: "San Francisco Display Bold";
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 54px;
-    max-width: 767px;
-    width: 100%;
-    margin: 0px auto;
-    text-align: center;
-    padding-top: 65px;
-    margin-bottom: 50px;
-}
-#solution h2 span{
-    color: #34AC3D;
+#solution img {
+  width: 100%;
+  margin: 0px auto;
+  cursor: pointer;
 }
 
-#solution .tab_navigation {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
+#solution h2 {
+  font-family: "San Francisco Display Bold";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  max-width: 767px;
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  padding-top: 65px;
+  margin-bottom: 50px;
 }
 
-#solution .tab_navigation li {
-    padding:  20px 25px;
-    cursor: pointer;
-    transition: all 0.3 ease-in-out;
-    color: #333333;
-}
-
-#solution .tab_navigation li h4 {
-    font-family: "San Francisco Display Bold";
-    font-weight: 700;
-    font-size: 20px;
-    margin-bottom: 11px;
-}
-
-#solution .tab_navigation li p{
-    font-family: "San Francisco Display Regular";
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-}
-
-
-#solution .tab_navigation li.active{
-    background: #34AC3D;
-    border-radius: 20px;
-    color: #FFFFFF;
-}
-
-
-/* Giải đáp những thắc mắc về  Phần mềm*/
-#answer {
-    background-image: url('../background-images/answer-bg.png');
-    background-repeat: no-repeat;
-    background-position: top;
-}
-
-#answer .content{
-    float: right;
-    margin-top: 105px;
-}
-
-#answer .content h2{
-    font-family: "San Francisco Display Bold";
-    color: #17468C;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 54px;
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-#answer .content h2 span{
+#solution h2 span {
   color: #34AC3D;
 }
 
-
-
-#tabs{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-  }
-
-#tabs .item {
-    background: #FFFFFF;
-    width: 100%;
-    box-shadow: 0px 0px 16px #CCE8C8;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3 ease-in-out;
-    padding: 20px 28px;
-    margin-bottom: 16px;
+#solution .tab_navigation {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-#tabs .item li i.fa-minus {
-    display: none;
+#solution .tab_navigation li {
+  padding: 20px 25px;
+  cursor: pointer;
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease-in-out;
+  color: #333333;
 }
 
-#tabs .item li i.fa-solid {
-    top: 0px;
-    right: 0px;
-   position: absolute;
-   color: #828282;
-   font-size: 20px;
+#solution .tab_navigation li h4 {
+  font-family: "San Francisco Display Bold";
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 11px;
 }
 
-#tabs .item li.title {
-   
-    position: relative;
+#solution .tab_navigation li p {
+  font-family: "San Francisco Display Regular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
 }
 
-#tabs .item.active li.title {
-    border-bottom: 1px solid #EAEAEA;
+#solution .tab_navigation li.active {
+  background: #34AC3D;
+  border-radius: 20px;
+  color: #FFFFFF;
 }
 
-#tabs .item li.title h5 {
-    font-family: "San Francisco Display Bold";
-    color: #333333;
-    font-weight: 700;
-    font-size: 16px;
-    margin: auto;
-    margin-right: 30px;
+/* Giải đáp những thắc mắc về  Phần mềm*/
+#answer {
+  background-image: url("../images/answer-bg.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  /* -----------Bắt đầu dùng thử miễn phí 7 ngày------------ */
 }
 
-#tabs .item .tab_content p {
-    font-family: "San Francisco Display Regular";
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 22px;
-    color: #000000;
-    padding-top: 16px;
+#answer .content {
+  float: right;
+  margin-top: 105px;
 }
 
-#tabs .item.active li.title h5 {
-    color: #34AC3D;
-    margin-bottom: 11px;
+#answer .content h2 {
+  font-family: "San Francisco Display Bold";
+  color: #17468C;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
+  padding-bottom: 30px;
 }
 
-#tabs .item.active li i.fa-minus {
-    display: block;
+#answer .content h2 span {
+  color: #34AC3D;
 }
 
-#tabs .item.active li i.fa-plus {
-    display: none;
+#answer .wp-content:last-child {
+  margin-top: 50px;
 }
 
-
-#tabs .tab_content {
-    display: none;
-}
-
-/* -----------Bắt đầu dùng thử miễn phí 7 ngày------------ */
-
-#answer .wp-content:last-child{
-    margin-top: 50px;
-}
-
-#answer .trial{
-    background: linear-gradient(180deg, #EA8932 0%, #F57807 100%);
-    border-radius: 46px;
-    width: 100%;
-    min-height: 251px;
-    margin-bottom: 30px;
+#answer .trial {
+  background: -webkit-gradient(linear, left top, left bottom, from(#EA8932), to(#F57807));
+  background: linear-gradient(180deg, #EA8932 0%, #F57807 100%);
+  border-radius: 46px;
+  width: 100%;
+  min-height: 251px;
+  margin-bottom: 30px;
 }
 
 #answer .trial h2 {
-    font-family: "San Francisco Display Bold";     
-    color: #FFFFFF;                    
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 43px;
-    padding-top: 44px;
+  font-family: "San Francisco Display Bold";
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  padding-top: 44px;
 }
 
 #answer .trial p {
-    font-family: "San Francisco Display Regular";     
-    color: #FFFFFF;                    
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    margin-bottom: 30px;
+  font-family: "San Francisco Display Regular";
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 30px;
 }
 
-
-
-#answer .trial .input-group{
-    min-height: 54px;
-    max-width: 750px;
-    margin: 0px auto;
+#answer .trial .input-group {
+  min-height: 54px;
+  max-width: 750px;
+  margin: 0px auto;
 }
 
-#answer .trial .input-group input{
-    font-family: "San Francisco Display Regular";  
-    font-weight: 400;
-    font-size: 15px;
-    color: #828282;
-
-}
-#answer .trial .input-group input:focus{
-    box-shadow: none;
+#answer .trial .input-group input {
+  font-family: "San Francisco Display Regular";
+  font-weight: 400;
+  font-size: 15px;
+  color: #828282;
 }
 
-#answer .trial .input-group .btn-free-trial{
-    background: linear-gradient(90deg, #3BB54A 0%, #7EC341 100%);
-    border-radius: 6px;
-    color: #FFFFFF;
-    font-weight: 600;
-    font-size: 20px;
-    font-family: "San Francisco Display Bold";   
-    margin-left: 20px;  
-    box-shadow: none;
+#answer .trial .input-group input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
-#answer .trial .input-group .btn-free-trial:hover{
-    background: linear-gradient(90deg, #46994d 0%, #8ec060 100%);
+
+#answer .trial .input-group .btn-free-trial {
+  background: -webkit-gradient(linear, left top, right top, from(#3BB54A), to(#7EC341));
+  background: linear-gradient(90deg, #3BB54A 0%, #7EC341 100%);
+  border-radius: 6px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "San Francisco Display Bold";
+  margin-left: 20px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
+
+#answer .trial .input-group .btn-free-trial:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#46994d), to(#8ec060));
+  background: linear-gradient(90deg, #46994d 0%, #8ec060 100%);
+}
+
+#tabs {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#tabs .item {
+  background: #FFFFFF;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 16px #CCE8C8;
+          box-shadow: 0px 0px 16px #CCE8C8;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease-in-out;
+  padding: 20px 28px;
+  margin-bottom: 16px;
+}
+
+#tabs .item li i.fa-minus {
+  display: none;
+}
+
+#tabs .item li i.fa-solid {
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  color: #828282;
+  font-size: 20px;
+}
+
+#tabs .item li.title {
+  position: relative;
+}
+
+#tabs .item li.title h5 {
+  font-family: "San Francisco Display Bold";
+  color: #333333;
+  font-weight: 700;
+  font-size: 16px;
+  margin: auto;
+  margin-right: 30px;
+}
+
+#tabs .item .tab_content p {
+  font-family: "San Francisco Display Regular";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+  padding-top: 16px;
+}
+
+#tabs .item.active li.title {
+  border-bottom: 1px solid #EAEAEA;
+}
+
+#tabs .item.active li.title h5 {
+  color: #34AC3D;
+  margin-bottom: 11px;
+}
+
+#tabs .item.active li i.fa-minus {
+  display: block;
+}
+
+#tabs .item.active li i.fa-plus {
+  display: none;
+}
+
+#tabs .tab_content {
+  display: none;
+}
+
 /* ----------------------FOOTER--------------------- */
-footer{
-    background-color: #183D55;
-    color: #FFFFFF;
-    padding-bottom: 30px;
+footer {
+  background-color: #183D55;
+  color: #FFFFFF;
+  padding-bottom: 30px;
 }
 
-footer .row div:nth-child(1){
-    margin-top: 40px;
+footer .row div:nth-child(1) {
+  margin-top: 40px;
 }
 
-footer .row .support{
-    margin-top: 80px;
+footer .row div:nth-child(1) p {
+  font-family: "San Francisco Display Regular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  margin-top: 13px;
+  padding-right: 50px;
 }
 
-footer .row h3{
-    font-family: "San Francisco Display Bold";     
-    font-weight: 700;
-    font-size: 24px;
-    margin-bottom: 26px;
+footer .row .support {
+  margin-top: 80px;
 }
 
-footer .row .support p{
-    font-family: "San Francisco Display Medium";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 2;   
+footer .row .support p {
+  font-family: "San Francisco Display Medium";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 2;
 }
-footer .row .support img{
-   margin-right: 5px;
-   margin-bottom: 7px;
+
+footer .row .support img {
+  margin-right: 5px;
+  margin-bottom: 7px;
 }
+
+footer .row h3 {
+  font-family: "San Francisco Display Bold";
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 26px;
+}
+
 footer .row .contact {
-    margin-top: 80px;
+  margin-top: 80px;
 }
 
 footer .row .contact p {
-    font-family: "San Francisco Display Regular";
-    font-weight: 500;
-    font-size: 16px;
+  font-family: "San Francisco Display Regular";
+  font-weight: 500;
+  font-size: 16px;
 }
 
 footer .row .contact p:nth-child(2) {
-    font-family: "San Francisco Display Bold";
+  font-family: "San Francisco Display Bold";
 }
+
 footer .row .contact p:nth-child(3) span {
-    font-family: "San Francisco Display Bold";
+  font-family: "San Francisco Display Bold";
 }
 
 footer .row .contact img {
-    margin-right: 5px;
-   margin-bottom: 3px;
+  margin-right: 5px;
+  margin-bottom: 3px;
 }
 
-footer .row div:nth-child(1) p{
-    font-family: "San Francisco Display Regular";
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.02em;
-    margin-top: 13px;
-    padding-right: 50px;
-}
-
-/* social */
 footer .social span {
-    width: 32px;
-    height: 32px;
-    border: 1px solid #ffffff;
-    border-radius: 50%;
-    margin-right: 24px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  margin-right: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 footer .social span:hover {
-    background: linear-gradient(90deg, #3BB54A 0%, #7EC341 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#3BB54A), to(#7EC341));
+  background: linear-gradient(90deg, #3BB54A 0%, #7EC341 100%);
 }
 
-
-#copyright{
-    background: #FFFFFF;
-    height: 40px;
+/* -----------------Copyright----------------*/
+#copyright {
+  background: #FFFFFF;
+  height: 40px;
 }
 
-#copyright p{
-    font-family: "San Francisco Display Medium";
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 40px;
-    color: #677987;
-  
+#copyright p {
+  font-family: "San Francisco Display Medium";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 40px;
+  color: #677987;
 }
 
-#copyright p span{
-    color: #34AC3D;
+#copyright p span {
+  color: #34AC3D;
 }
 
-
-
-#messager{
-    display: flex;
-    cursor: pointer;
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    z-index: 999;
-}
-
-/*-------------------------- BACKTOP AND RING----------------------- */
-
+/*-------------------------- BACKTOP AND PHONE AND MESSAGER----------------------- */
 #backTop {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #677987;
-    position: fixed;
-    width: 42px;
-    height: 42px;
-    right: 40px;
-    bottom: 110px;
-    padding: 13.5px;
-    border-radius: 50%;
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
-    z-index: 999;
-  }
-  
-  .hl-ring {
-    position: fixed;
-    bottom: 40px;
-    left: 30px;
-    width: 54px;
-    height: 54px;
-    text-align: center;
-    z-index: 999;
-    cursor: pointer;
-    border: none;
-    background: #ee0033;
-    border-radius: 50%;
-  }
-
-  #hotline{
-      position: fixed;
-      bottom: 5px;
-      left: 60px;
-      cursor: pointer;
-  }
-  
-  .hl-ring img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 999;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .hl-ring .host-circle-fill {
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-name: pulse;
-    width: 70px;
-    height: 70px;
-    top: -7px;
-    right: -8px;
-    position: absolute;
-    transition: all 0.2s ease-in-out;
-    border-radius: 100%;
-    border: 2px solid transparent;
-    background-color: #f02937;
-    opacity: 0.15;
-  }
-  
-  .hl-ring .host-circle {
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-name: zoomIn;
-    width: 64px;
-    height: 64px;
-    top: -5px;
-    right: -5px;
-    position: absolute;
-    border-radius: 100%;
-    border: 2px solid rgba(30, 30, 30, 0.4);
-    opacity: 0.1;
-    border-color: #f02937;
-    opacity: 0.5;
-  }
-  
-  
-  @keyframes zoomIn {
-    0% {
-      -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-      transform: scale(0);
-    }
-  
-    100% {
-      -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-      transform: scale(1);
-    }
-  }
-  
-  .zoomIn {
-    -webkit-animation-name: zoomIn;
-    animation-name: zoomIn;
-  }
-  
-
-/* -----------------Responsive------------- */
-/* Banner image  */
-@media (max-width: 1750px) {
-    #banner .banner-image {
-        right: 15%;
-    }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #677987;
+  position: fixed;
+  width: 42px;
+  height: 42px;
+  right: 40px;
+  bottom: 110px;
+  padding: 13.5px;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 999;
 }
 
-@media (max-width: 1550px) {
-    #banner .banner-image {
-        right: 13%;
-    }
+#messager {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 999;
 }
 
-@media (max-width: 1460px) {
-    #banner .banner-image {
-        right: 10%;
-    }
-}
-@media (max-width: 1320px) {
-    #banner .banner-image {
-        right: 6%;
-    }
-}
-@media (max-width: 1280px) {
-    #banner .banner-image {
-        right: 5%;
-    }
+.hl-ring {
+  position: fixed;
+  bottom: 40px;
+  left: 30px;
+  width: 54px;
+  height: 54px;
+  text-align: center;
+  z-index: 999;
+  cursor: pointer;
+  border: none;
+  background: #ee0033;
+  border-radius: 50%;
 }
 
-@media (max-width: 1200px) {
-    .wp-content{
-        padding: 0px 30px;
-    }
-      
-    header #menu-tablet {
-        display: block;
-    }
- 
-    /* -------------banner--------- */
-    #banner .banner-image{
-        display: none;
-    }
- 
-    #banner{
-        background-image: url("../background-images/banner-background-tablet.png");
-        padding-bottom: 150px;
-    }
-
-    #banner .row{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-
-    #banner .content p:nth-child(2){
-        padding: 0px 10px;
-        max-width: 568px;
-        margin: 0px auto;
-    }
-
-   #menu-destop{
-       display: none;
-   }
-
-   #menu-tablet{
-       display: block;
-   }
-
-   #menu-tablet .preHeader .search{
-       position: absolute;
-       right: 42px;
-       top: 14px; 
-       width: 30px;
-       height: 30px;
-   }
-
-   #menu-tablet .preHeader{
-        position: relative;
-   }
-
-   #menu-tablet .preHeader .btn-tablet{
-    position: absolute;
-    right: 0px;
-    top: 13px;
-    font-size: 28px;
-   }
-
-   /* Giải pháp quản lý */
-   #services .stock-manage .content{
-        padding: 0px 40px 30px 40px;
-   }
-   #services .search .content{
-        padding: 0px 40px 30px 40px;
-    }
-    #services .order-manage .content{
-        padding: 0px 40px 30px 40px;
-    }
-    #services .report .content{
-        padding: 0px 40px 30px 40px;
-    }
-   
-    #supplies-tablet .owl-dots .owl-dot span{
-       width: 15px;
-       height: 15px;
-       background-color: #FFFFFF;
-       border: 2px solid #C7C7C7;
-    }
-
-    #priceboard #supplies-tablet .item {
-        margin: 20px;
-    }
-
-    #supplies-tablet .owl-item{
-        /* width: 50% !important; */
-        display: flex;
-        justify-content: center;
-        width: 33%;
-        /* margin: 50px 10px; */
-    }
-
-    #supplies-tablet .owl-dots{
-        margin-left: 15px;
-    }
-
-    #supplies-tablet .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
-        background-color: #34AC3D;
-        border: none;
-    }
-
-   #supplies-desktop{
-       display: none;
-   }
-
-
-   #supplies-tablet {
-    margin: 0px auto;
-    max-width: 800px;
-    }
-
-   #supplies-tablet{
-        display: block;
-    }
-
-    /* #report-system {
-        background-image: url(../background-images/system-report-tablet-bg.png);
-        background-size: 100%;
-    } */
-
-    #report-system h2{
-        padding-top: 250px;
-        margin-bottom: 40px;
-    }
-
-    #report-system .content .item:nth-child(1){
-        margin: 0px;
-    }
-    #report-system .content .item:nth-child(2){
-        margin: 0px;
-    }
-    #report-system .content .item:nth-child(3){
-        margin: 0px;
-    }
-    #report-system .content .item:nth-child(4){
-        margin: 0px;
-    }
-    #report-system .content{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    #report-system .content .item {
-        width: 350px;
-        margin: 10px 20px !important;
-    }
-    #report-system h2{
-        text-align: center;
-    }
-
-    #answer{
-        background-image: url('../background-images/answer-bg-tablet.png');
-    }
-
-    #answer .content{
-       float: none;
-       margin: 0px auto;
-    }
-
-    #answer .wp-content h2{
-        padding-top: 50px;
-        padding-bottom: 20px;
-    }
-
-    #answer .wp-content:last-child{
-        margin-top: 28px;
-    }
- 
+.hl-ring img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-@media (max-width: 992px) {
-
-    #services .tablet-image{
-        display: block;
-    }
-
-    #services .desktop-image{
-        display: none;
-    }
-
-    /* Giải pháp quản lý  */
-    #services .search .content{
-        order: 2;
-    }
-
-    #services .report .content{
-        order: 2;
-    }
-
- 
-    #answer .trial{
-        padding: 0px 20px;
-    }
-
-    #answer .trial .input-group{
-        max-width: 636px;
-    }
-    
-    #banner .content h2{
-        font-size: 36px;
-    }
-
-    #banner .content p:nth-child(2){
-        padding: 5px 30px;
-    }
-
-    #banner .btn-free-trial{
-        font-size: 18px;
-    }
-
-    #banner .btn-discover{
-        font-size: 18px;
-    }
-
-    #services .title{
-        font-size: 28px;
-    }
-
-    #services .btn-free-trial{
-        font-size: 18px;
-    }
-
-    #priceboard .wp-content .introduction h2{
-        font-size: 32px;
-    }
-
-    #priceboard .supplies .item h2{
-        font-size: 28px;
-    }
-
-    #priceboard .supplies .item p:nth-child(4) span{
-        font-size: 28px;
-    }
-
-    #priceboard .supplies .item .btn-trial p{
-        font-size: 18px;
-    }
-
-    #report-system h2{
-        font-size: 32px;
-    }
-
-    #report-system .btn-free-trial{
-        font-size: 18px;
-    }
-
-    #solution h2{
-        font-size: 28px;
-    }
-
-    #answer .content h2{
-        font-size: 32px;
-    }
-
-    #answer .trial h2{
-        font-size: 32px;
-    }
-
-    #answer .trial .input-group .btn-free-trial{
-        font-size: 18px;
-    }
-
-    footer .row h3{
-        font-size: 22px;
-    }
-
-    footer .row .support{
-        margin-top: 40px;
-    }
-
-    footer .row .contact {
-        margin-top: 40px;
-    }
+.hl-ring .host-circle-fill {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  width: 70px;
+  height: 70px;
+  top: -7px;
+  right: -8px;
+  position: absolute;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-radius: 100%;
+  border: 2px solid transparent;
+  background-color: #f02937;
+  opacity: 0.15;
 }
 
-@media (max-width: 841px) {
-    #report-system .content .item{
-            width: 328px;
-    }
+.hl-ring .host-circle {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
+  width: 64px;
+  height: 64px;
+  top: -5px;
+  right: -5px;
+  position: absolute;
+  border-radius: 100%;
+  border: 2px solid rgba(30, 30, 30, 0.4);
+  opacity: 0.1;
+  border-color: #f02937;
+  opacity: 0.5;
 }
 
-@media (max-width: 795px) {
-    #report-system {
-        background-image: url(../background-images/system-report-mobile-bg.png);
-    }
-
-    #report-system .content .item{
-        width: 100%;
-        max-width: 300px;
-    }
+#hotline {
+  position: fixed;
+  bottom: 5px;
+  left: 60px;
+  cursor: pointer;
 }
 
-
-@media (max-width: 768px) {
-
-    /* #report-system {
-        background-image: url(../background-images/system-report-bg.png);
-    } */
-    #banner{
-        padding-bottom: 100px;
-    }
-
-    #solution .content.row .col-md-6:nth-child(1){
-        margin-top: 32px;
-    }
-
-    #solution .desktop.content{
-        display: none;
-    }
-
-    #solution .mobile.content{
-        display: block;
-    }
-
-    #solution img {
-        width: 100%;
-        max-width: 500px;
-        margin: 0px auto;
-        display: block;
-        margin-bottom: 20px;
-    }
-
-    .wp-content{
-        padding: 0px 15px;
-    }
-    
-    #priceboard .supplies .item{
-        width: 100%;
-        max-width: 400px;
-    }
-    #priceboard #supplies-tablet .item {
-        margin-left: 0px;
-    }
-
-    #answer .trial .input-group{
-        display: inline;
-    }
-
-    #answer .trial .input-group input{
-        width: 100%;
-        max-width: 560px;
-        height: 50px;
-        margin: 0px auto;
-    }
-
-    #answer .trial .input-group .btn-free-trial{
-        height: 50px;
-        margin: 16px auto 32px auto;
-        font-size: 16px;
-    }
-    
-    #banner .btn-free-trial{
-        width: 170px;
-        height: 44px;
-        font-size: 16px;
-    }
-
-    #banner .btn-discover{
-        width: 170px;
-        height: 44px;
-        font-size: 16px;
-        padding-left:5px;
-    }
-
-    #banner .content h2 {
-        font-size: 32px;
-    }
-
-    #services .title {
-        font-size: 24px;
-    }
-
-    #services .stock-manage .content h3{
-        font-size: 20px;
-    }
-
-    #services .order-manage .content h3{
-        font-size: 20px;
-    }
-
-    #services .search .content h3{
-        font-size: 20px;
-    }
-
-    #services .report .content h3{
-        font-size: 20px;
-    }
-
-    #services .btn-free-trial {
-        font-size: 16px;
-    }
-    #priceboard .wp-content .introduction h2 {
-        font-size: 28px;
-    }
-    #priceboard .wp-content .introduction p{
-        font-size: 18px;
-    }
-    #priceboard .supplies .item h2 {
-        font-size: 24px;
-    }
-    #priceboard .supplies .item p:nth-child(4) span {
-        font-size: 24px;
-    }
-    #priceboard .supplies .item .btn-trial p {
-        font-size: 16px;
-    }
-    #report-system h2 {
-        font-size: 28px;
-    }
-    #report-system .btn-free-trial {
-        font-size: 16px;
-    }
-    #solution h2 {
-        font-size: 24px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        line-height: 1.5;
-    }
-    #solution .tab_navigation li h4{
-        font-size: 18px;
-    }
-    #answer .content h2 {
-        font-size: 28px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        line-height: 1.5;
-    }
-    #answer .trial h2 {
-        font-size: 28px;
-        padding-bottom: 0px;
-    }
-    #answer .trial p{
-        font-size: 18px;
-        margin-bottom: 15px;
-    }
-    
-    footer .row h3{
-        font-size: 20px;
-    }
-    
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
 }
 
-@media (max-width: 533px) {
-    #banner{
-        padding-bottom: 60px;
-    }
+/* ------------------------------------- LOGIN PAGE ----------------------- */
+.wapper-login-page {
+  background-image: url("../images/login-bg.png");
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  max-height: 1080px;
+  background-repeat: no-repeat;
+  background-position-y: -100px;
+  margin: 0px auto;
 }
 
-@media (max-width: 450px) {
-    #wapper-tablet-menu{
-        max-width: 320px;
-    }
+.login-form {
+  margin: 0px auto;
+  padding: 200px 15px 0px 15px;
+  width: 100%;
+  height: 100%;
+  max-width: 572px;
+  max-height: 456px;
 }
 
-@media (max-width: 388px) {
-    #banner .group-button{
-        display: flex;
-        flex-direction: column;
-    }
-
-    #banner .btn-free-trial{
-        margin: 5px auto;
-    }
-    #banner .btn-discover{
-        margin: 5px auto;
-    }
+.login-form h3 {
+  font-family: "San Francisco Display Medium";
+  font-weight: 600;
+  font-size: 24px;
+  color: #6D6D6D;
+  margin-top: 20px;
+  text-align: center;
 }
 
+.login-form img {
+  margin: 0px auto;
+  display: block;
+}
+
+.login-form input[type="text"] {
+  font-family: "San Francisco Display Regular";
+  font-weight: 500;
+  border: 1px solid #BDBDBD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 34px;
+  width: 100%;
+  height: 100%;
+  max-width: 572px;
+  max-height: 48px;
+  padding: 16px 20px;
+  margin: 16px 0px;
+  color: #4F4F4F;
+}
+
+.login-form input[type="text"]:nth-child(2) {
+  margin: 0px 0px 10px 0px;
+}
+
+.login-form input:not(#remember):focus {
+  outline: none;
+  border: 1px solid #34AC3D;
+}
+
+.login-form .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 5px;
+  margin-top: 8px;
+}
+
+.login-form .item a {
+  font-family: "San Francisco Display Medium";
+  text-decoration: none;
+  color: #34AC3D;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.login-form .item label {
+  font-family: "San Francisco Display Regular";
+  color: #4F4F4F;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.login-form button {
+  font-family: "San Francisco Display Semibold";
+  font-size: 20px;
+  font-weight: 600;
+  width: 242px;
+  height: 54px;
+  background: #EA8932;
+  border-radius: 46px;
+  color: #FFFFFF;
+  display: block;
+  margin: 0px auto;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.login-form button:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#dda631), to(#df6f0ddc));
+  background: linear-gradient(90deg, #dda631 0%, #df6f0ddc 100%);
+  color: #FFFFFF;
+}
+
+.remember {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.remember input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.remember input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 7px;
+  width: 7px;
+  height: 14px;
+  border: solid #40B64A;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.remember label {
+  position: relative;
+  cursor: pointer;
+}
+
+.remember label:before {
+  content: '';
+  -webkit-appearance: none;
+  background: #FFFFFF;
+  border: 1px solid #40B64A;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+  width: 20px;
+  height: 20px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-bottom: 4px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,452 @@
+@charset "UTF-8";
+/* -----------------Responsive------------- */
+/* Banner image  */
+@media (max-width: 1750px) {
+  #banner .banner-image {
+    right: 15%;
+  }
+}
+
+@media (max-width: 1550px) {
+  #banner .banner-image {
+    right: 13%;
+  }
+}
+
+@media (max-width: 1460px) {
+  #banner .banner-image {
+    right: 10%;
+  }
+}
+
+@media (max-width: 1320px) {
+  #banner .banner-image {
+    right: 6%;
+  }
+}
+
+@media (max-width: 1280px) {
+  #banner .banner-image {
+    right: 5%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wp-content {
+    padding: 0px 30px;
+  }
+  header #menu-tablet {
+    display: block;
+  }
+  /* -------------banner--------- */
+  #banner {
+    background-image: url("../images/banner-background-tablet.png");
+    padding-bottom: 150px;
+  }
+  #banner .banner-image {
+    display: none;
+  }
+  #banner .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  #banner .content p:nth-child(2) {
+    padding: 0px 10px;
+    max-width: 568px;
+    margin: 0px auto;
+  }
+  #menu-destop {
+    display: none;
+  }
+  #menu-tablet {
+    display: block;
+  }
+  #menu-tablet .preHeader {
+    position: relative;
+  }
+  #menu-tablet .preHeader .search {
+    position: absolute;
+    right: 42px;
+    top: -22px;
+    width: 30px;
+    height: 30px;
+    background-color: #FFFFFF;
+  }
+  #menu-tablet .preHeader .btn-tablet {
+    position: absolute;
+    right: 0px;
+    top: 13px;
+    font-size: 28px;
+  }
+  /* Giải pháp quản lý */
+  #services .stock-manage .content {
+    padding: 0px 40px 30px 40px;
+  }
+  #services .search .content {
+    padding: 0px 40px 30px 40px;
+  }
+  #services .order-manage .content {
+    padding: 0px 40px 30px 40px;
+  }
+  #services .report .content {
+    padding: 0px 40px 30px 40px;
+  }
+  #supplies-tablet {
+    margin: 0px auto;
+    max-width: 800px;
+    display: block;
+  }
+  #supplies-tablet .owl-dots {
+    margin-left: 15px;
+  }
+  #supplies-tablet .owl-dots .owl-dot span {
+    width: 15px;
+    height: 15px;
+    background-color: #FFFFFF;
+    border: 2px solid #C7C7C7;
+  }
+  #supplies-tablet .owl-dots .owl-dot.active span {
+    background-color: #34AC3D;
+    border: none;
+  }
+  #supplies-tablet .owl-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 33%;
+  }
+  #priceboard #supplies-tablet .item {
+    margin: 20px;
+  }
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #34AC3D;
+    border: none;
+  }
+  #supplies-desktop {
+    display: none;
+  }
+  #report-system {
+    padding-bottom: 0px;
+  }
+  #report-system h2 {
+    padding-top: 250px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  #report-system .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #report-system .content .item {
+    width: 350px;
+    margin: 10px 20px !important;
+  }
+  #report-system .content .item:nth-child(1) {
+    margin: 0px;
+  }
+  #report-system .content .item:nth-child(2) {
+    margin: 0px;
+  }
+  #report-system .content .item:nth-child(3) {
+    margin: 0px;
+  }
+  #report-system .content .item:nth-child(4) {
+    margin: 0px;
+  }
+  #answer {
+    background-image: url("../images/answer-bg-tablet.png");
+  }
+  #answer .content {
+    float: none;
+    margin: 0px auto;
+  }
+  #answer .wp-content h2 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  #answer .wp-content:last-child {
+    margin-top: 28px;
+  }
+}
+
+@media (max-width: 992px) {
+  #services .tablet-image {
+    display: block;
+  }
+  #services .desktop-image {
+    display: none;
+  }
+  #services .search .content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #services .report .content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #services .title {
+    font-size: 28px;
+  }
+  #services .btn-free-trial {
+    font-size: 18px;
+  }
+  #answer .trial {
+    padding: 0px 20px;
+  }
+  #answer .trial .input-group {
+    max-width: 636px;
+  }
+  #answer .trial .input-group .btn-free-trial {
+    font-size: 18px;
+  }
+  #answer .trial h2 {
+    font-size: 32px;
+  }
+  #answer .content h2 {
+    font-size: 32px;
+  }
+  #banner .content h2 {
+    font-size: 36px;
+  }
+  #banner .content p:nth-child(2) {
+    padding: 5px 30px;
+  }
+  #banner .btn-free-trial {
+    font-size: 18px;
+  }
+  #banner .btn-discover {
+    font-size: 18px;
+  }
+  #priceboard .wp-content .introduction h2 {
+    font-size: 32px;
+  }
+  #priceboard .supplies .item h2 {
+    font-size: 28px;
+  }
+  #priceboard .supplies .item p:nth-child(4) span {
+    font-size: 28px;
+  }
+  #priceboard .supplies .item .btn-trial p {
+    font-size: 18px;
+  }
+  #report-system h2 {
+    font-size: 32px;
+  }
+  #report-system .btn-free-trial {
+    font-size: 18px;
+  }
+  #solution h2 {
+    font-size: 28px;
+  }
+  footer .row h3 {
+    font-size: 22px;
+  }
+  footer .row .support {
+    margin-top: 40px;
+  }
+  footer .row .contact {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 841px) {
+  #report-system .content .item {
+    width: 328px;
+  }
+}
+
+@media (max-width: 795px) {
+  #report-system {
+    background-image: url(../images/system-report-mobile-bg.png);
+    padding-bottom: 30px;
+  }
+  #report-system .content .item {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  #banner {
+    padding-bottom: 100px;
+  }
+  #banner .btn-free-trial {
+    width: 170px;
+    height: 44px;
+    font-size: 16px;
+  }
+  #banner .btn-discover {
+    width: 170px;
+    height: 44px;
+    font-size: 16px;
+    padding-left: 5px;
+  }
+  #banner .content h2 {
+    font-size: 32px;
+  }
+  #solution .content.row .col-md-6:nth-child(1) {
+    margin-top: 32px;
+  }
+  #solution .desktop.content {
+    display: none;
+  }
+  #solution .mobile.content {
+    display: block;
+  }
+  #solution img {
+    width: 100%;
+    max-width: 500px;
+    margin: 0px auto;
+    display: block;
+    margin-bottom: 20px;
+  }
+  #solution h2 {
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 1.5;
+  }
+  #solution .tab_navigation li h4 {
+    font-size: 18px;
+  }
+  .wp-content {
+    padding: 0px 15px;
+  }
+  #priceboard .supplies .item {
+    width: 100%;
+    max-width: 400px;
+  }
+  #priceboard .supplies .item h2 {
+    font-size: 24px;
+  }
+  #priceboard .supplies .item p:nth-child(4) span {
+    font-size: 24px;
+  }
+  #priceboard .supplies .item .btn-trial p {
+    font-size: 16px;
+  }
+  #priceboard #supplies-tablet .item {
+    margin-left: 0px;
+  }
+  #priceboard .wp-content .introduction h2 {
+    font-size: 28px;
+    line-height: 1.5;
+  }
+  #priceboard .wp-content .introduction p {
+    font-size: 18px;
+  }
+  #answer .trial .input-group {
+    display: inline;
+  }
+  #answer .trial .input-group input {
+    width: 100%;
+    max-width: 560px;
+    height: 50px;
+    margin: 0px auto;
+  }
+  #answer .trial .input-group .btn-free-trial {
+    height: 50px;
+    margin: 16px auto 32px auto;
+    font-size: 16px;
+  }
+  #answer .trial h2 {
+    font-size: 28px;
+    padding-bottom: 0px;
+  }
+  #answer .trial p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  #answer .content h2 {
+    font-size: 28px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 1.5;
+  }
+  #services .title {
+    font-size: 24px;
+  }
+  #services .stock-manage .content h3 {
+    font-size: 20px;
+  }
+  #services .order-manage .content h3 {
+    font-size: 20px;
+  }
+  #services .search .content h3 {
+    font-size: 20px;
+  }
+  #services .report .content h3 {
+    font-size: 20px;
+  }
+  #services .btn-free-trial {
+    font-size: 16px;
+  }
+  #report-system h2 {
+    font-size: 28px;
+  }
+  #report-system .btn-free-trial {
+    font-size: 16px;
+  }
+  footer .row h3 {
+    font-size: 20px;
+  }
+  /* -------------------------Login page--------------------- */
+  .login-form {
+    padding-top: 100px;
+  }
+  .login-form img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  #report-system .content .item {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 533px) {
+  #banner {
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 450px) {
+  #wapper-tablet-menu {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 388px) {
+  #banner .group-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #banner .btn-free-trial {
+    margin: 5px auto;
+  }
+  #banner .btn-discover {
+    margin: 5px auto;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

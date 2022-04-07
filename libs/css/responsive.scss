@@ -1,0 +1,577 @@
+$color-while: #FFFFFF;
+$color-green: #34AC3D;
+
+/* -----------------Responsive------------- */
+/* Banner image  */
+@media (max-width: 1750px) {
+	#banner {
+		.banner-image {
+			right: 15%;
+		}
+	}
+}
+@media (max-width: 1550px) {
+	#banner {
+		.banner-image {
+			right: 13%;
+		}
+	}
+}
+@media (max-width: 1460px) {
+	#banner {
+		.banner-image {
+			right: 10%;
+		}
+	}
+}
+@media (max-width: 1320px) {
+	#banner {
+		.banner-image {
+			right: 6%;
+		}
+	}
+}
+@media (max-width: 1280px) {
+	#banner {
+		.banner-image {
+			right: 5%;
+		}
+	}
+}
+@media (max-width: 1200px) {
+	.wp-content {
+		padding: 0px 30px;
+	}
+	header {
+		#menu-tablet {
+			display: block;
+		}
+	}
+    /* -------------banner--------- */
+	#banner {
+		.banner-image {
+			display: none;
+		}
+		background-image: url("../images/banner-background-tablet.png");
+		padding-bottom: 150px;
+		.row {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		}
+		.content {
+			p {
+				&:nth-child(2) {
+					padding: 0px 10px;
+					max-width: 568px;
+					margin: 0px auto;
+				}
+			}
+		}
+	}
+	#menu-destop {
+		display: none;
+	}
+	#menu-tablet {
+		display: block;
+		.preHeader {
+			.search {
+				position: absolute;
+				right: 42px;
+				top: -22px;
+				width: 30px;
+				height: 30px;
+				background-color: $color-while;
+			}
+			position: relative;
+			.btn-tablet {
+				position: absolute;
+				right: 0px;
+				top: 13px;
+				font-size: 28px;
+			}
+		}
+	}
+
+    /* Giải pháp quản lý */
+	#services {
+		.stock-manage {
+			.content {
+				padding: 0px 40px 30px 40px;
+			}
+		}
+		.search {
+			.content {
+				padding: 0px 40px 30px 40px;
+			}
+		}
+		.order-manage {
+			.content {
+				padding: 0px 40px 30px 40px;
+			}
+		}
+		.report {
+			.content {
+				padding: 0px 40px 30px 40px;
+			}
+		}
+	}
+	#supplies-tablet {
+		.owl-dots {
+			.owl-dot {
+				span {
+					width: 15px;
+					height: 15px;
+					background-color: $color-while;
+					border: 2px solid #C7C7C7;
+				}
+			}
+			margin-left: 15px;
+			.owl-dot.active {
+				span {
+					background-color: $color-green;
+					border: none;
+				}
+			}
+		}
+		.owl-item {
+			display: flex;
+			justify-content: center;
+			width: 33%;
+		}
+		margin: 0px auto;
+		max-width: 800px;
+		display: block;
+	}
+	#priceboard {
+		#supplies-tablet {
+			.item {
+				margin: 20px;
+			}
+		}
+	}
+	.owl-theme {
+		.owl-dots {
+			.owl-dot {
+				&:hover {
+					span {
+						background-color: $color-green;
+						border: none;
+					}
+				}
+			}
+		}
+	}
+	#supplies-desktop {
+		display: none;
+	}
+	#report-system {
+		padding-bottom: 0px;
+		h2 {
+			padding-top: 250px;
+			margin-bottom: 40px;
+			text-align: center;
+		}
+		.content {
+			.item {
+				&:nth-child(1) {
+					margin: 0px;
+				}
+				&:nth-child(2) {
+					margin: 0px;
+				}
+				&:nth-child(3) {
+					margin: 0px;
+				}
+				&:nth-child(4) {
+					margin: 0px;
+				}
+				width: 350px;
+				margin: 10px 20px !important;
+			}
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+	#answer {
+		background-image: url('../images/answer-bg-tablet.png');
+		.content {
+			float: none;
+			margin: 0px auto;
+		}
+		.wp-content {
+			h2 {
+				padding-top: 50px;
+				padding-bottom: 20px;
+			}
+			&:last-child {
+				margin-top: 28px;
+			}
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	#services {
+		.tablet-image {
+			display: block;
+		}
+		.desktop-image {
+			display: none;
+		}
+		.search {
+			.content {
+				order: 2;
+			}
+		}
+		.report {
+			.content {
+				order: 2;
+			}
+		}
+		.title {
+			font-size: 28px;
+		}
+		.btn-free-trial {
+			font-size: 18px;
+		}
+	}
+	#answer {
+		.trial {
+			padding: 0px 20px;
+			.input-group {
+				max-width: 636px;
+				.btn-free-trial {
+					font-size: 18px;
+				}
+			}
+			h2 {
+				font-size: 32px;
+			}
+		}
+		.content {
+			h2 {
+				font-size: 32px;
+			}
+		}
+	}
+	#banner {
+		.content {
+			h2 {
+				font-size: 36px;
+			}
+			p {
+				&:nth-child(2) {
+					padding: 5px 30px;
+				}
+			}
+		}
+		.btn-free-trial {
+			font-size: 18px;
+		}
+		.btn-discover {
+			font-size: 18px;
+		}
+	}
+	#priceboard {
+		.wp-content {
+			.introduction {
+				h2 {
+					font-size: 32px;
+				}
+			}
+		}
+		.supplies {
+			.item {
+				h2 {
+					font-size: 28px;
+				}
+				p {
+					&:nth-child(4) {
+						span {
+							font-size: 28px;
+						}
+					}
+				}
+				.btn-trial {
+					p {
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
+	#report-system {
+		h2 {
+			font-size: 32px;
+		}
+		.btn-free-trial {
+			font-size: 18px;
+		}
+	}
+	#solution {
+		h2 {
+			font-size: 28px;
+		}
+	}
+	footer {
+		.row {
+			h3 {
+				font-size: 22px;
+			}
+			.support {
+				margin-top: 40px;
+			}
+			.contact {
+				margin-top: 40px;
+			}
+		}
+	}
+}
+@media (max-width: 841px) {
+	#report-system {
+		.content {
+			.item {
+				width: 328px;
+			}
+		}
+	}
+}
+@media (max-width: 795px) {
+	#report-system {
+		background-image: url(../images/system-report-mobile-bg.png);
+		padding-bottom: 30px;
+		.content {
+			.item {
+				width: 100%;
+				max-width: 300px;
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	#banner {
+		padding-bottom: 100px;
+		.btn-free-trial {
+			width: 170px;
+			height: 44px;
+			font-size: 16px;
+		}
+		.btn-discover {
+			width: 170px;
+			height: 44px;
+			font-size: 16px;
+			padding-left: 5px;
+		}
+		.content {
+			h2 {
+				font-size: 32px;
+			}
+		}
+	}
+	#solution {
+		.content.row {
+			.col-md-6 {
+				&:nth-child(1) {
+					margin-top: 32px;
+				}
+			}
+		}
+		.desktop.content {
+			display: none;
+		}
+		.mobile.content {
+			display: block;
+		}
+		img {
+			width: 100%;
+			max-width: 500px;
+			margin: 0px auto;
+			display: block;
+			margin-bottom: 20px;
+		}
+		h2 {
+			font-size: 24px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			line-height: 1.5;
+		}
+		.tab_navigation {
+			li {
+				h4 {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+	.wp-content {
+		padding: 0px 15px;
+	}
+	#priceboard {
+		.supplies {
+			.item {
+				width: 100%;
+				max-width: 400px;
+				h2 {
+					font-size: 24px;
+				}
+				p {
+					&:nth-child(4) {
+						span {
+							font-size: 24px;
+						}
+					}
+				}
+				.btn-trial {
+					p {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+		#supplies-tablet {
+			.item {
+				margin-left: 0px;
+			}
+		}
+		.wp-content {
+			.introduction {
+				h2 {
+					font-size: 28px;
+					line-height: 1.5;
+				}
+				p {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+	#answer {
+		.trial {
+			.input-group {
+				display: inline;
+				input {
+					width: 100%;
+					max-width: 560px;
+					height: 50px;
+					margin: 0px auto;
+				}
+				.btn-free-trial {
+					height: 50px;
+					margin: 16px auto 32px auto;
+					font-size: 16px;
+				}
+			}
+			h2 {
+				font-size: 28px;
+				padding-bottom: 0px;
+			}
+			p {
+				font-size: 18px;
+				margin-bottom: 15px;
+			}
+		}
+		.content {
+			h2 {
+				font-size: 28px;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				line-height: 1.5;
+			}
+		}
+	}
+	#services {
+		.title {
+			font-size: 24px;
+		}
+		.stock-manage {
+			.content {
+				h3 {
+					font-size: 20px;
+				}
+			}
+		}
+		.order-manage {
+			.content {
+				h3 {
+					font-size: 20px;
+				}
+			}
+		}
+		.search {
+			.content {
+				h3 {
+					font-size: 20px;
+				}
+			}
+		}
+		.report {
+			.content {
+				h3 {
+					font-size: 20px;
+				}
+			}
+		}
+		.btn-free-trial {
+			font-size: 16px;
+		}
+	}
+	#report-system {
+		h2 {
+			font-size: 28px;
+		}
+		.btn-free-trial {
+			font-size: 16px;
+		}
+	}
+	footer {
+		.row {
+			h3 {
+				font-size: 20px;
+			}
+		}
+	}
+
+/* -------------------------Login page--------------------- */
+    .login-form {
+        padding-top: 100px;
+        img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+    }
+}
+@media (max-width: 767px) {
+	#report-system {
+		.content {
+			.item {
+				max-width: 400px;
+			}
+		}
+	}
+}
+@media (max-width: 533px) {
+	#banner {
+		padding-bottom: 60px;
+	}
+}
+@media (max-width: 450px) {
+	#wapper-tablet-menu {
+		max-width: 320px;
+	}
+}
+@media (max-width: 388px) {
+	#banner {
+		.group-button {
+			display: flex;
+			flex-direction: column;
+		}
+		.btn-free-trial {
+			margin: 5px auto;
+		}
+		.btn-discover {
+			margin: 5px auto;
+		}
+	}
+}
