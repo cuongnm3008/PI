@@ -21,12 +21,25 @@ $(document).ready(function () {
 
 
     // Change content slide when clicked to menu tabs
-    $('.tab_navigation li').click(function (event) {
-        index = $(this).index();
-        $('.tab_navigation li').removeClass('active');
-        $(this).addClass('active');
-        $("#slideshow").trigger("to.owl.carousel", [index, 1])
-    });
+        $('.desktop .tab_navigation li').click(function (event) {
+            index = $(this).index();
+            $('.tab_navigation li').removeClass('active');
+            $(this).addClass('active');
+            $("#slideshow").trigger("to.owl.carousel", [index, 1])
+        });
+
+        $('#tabCotents .tab_content').hide();
+        
+        $('#tabCotents .tab_content:first').show();
+        $('#tabCotents li:first').addClass('active');
+  
+        $('#tabCotents li').click(function (event) {
+            index = $(this).index();
+            $('#tabCotents li').removeClass('active');
+            $(this).addClass('active');
+            $('#tabCotents .tab_content').hide();
+            $('#tabCotents .tab_content').eq((index+1)/2-1).show();
+        });
 
 });
 
