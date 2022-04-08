@@ -1,0 +1,204 @@
+
+$color-green: #34AC3D;
+$color-while: #FFFFFF;
+$color-dark_1: #333333;
+$color-dark_2: #4F4F4F;
+$color-gray : #828282;
+
+$font-bold: "San Francisco Display Bold";
+$font-medium: "San Francisco Display Medium";
+$font-semi-bold: "San Francisco Display Semibold";
+$font-regular: "San Francisco Display Regular";
+
+@font-face {
+	font-family: "San Francisco Display Black";
+	src: url(../fonts/SanFranciscoDisplay-Black.ttf);
+}
+@font-face {
+	font-family: "San Francisco Display Bold";
+	src: url(../fonts/SanFranciscoDisplay-Bold.ttf);
+}
+@font-face {
+	font-family: "San Francisco Display Heavy";
+	src: url(../fonts/SanFranciscoDisplay-Heavy.ttf);
+}
+@font-face {
+	font-family: "San Francisco Display Light";
+	src: url(../fonts/SanFranciscoDisplay-Light.ttf);
+}
+@font-face {
+	font-family: "San Francisco Display Medium";
+	src: url(../fonts/SanFranciscoDisplay-Medium.ttf);
+}
+@font-face {
+	font-family: "San Francisco Display Regular";
+	src: url(../fonts/SanFranciscoDisplay-Regular.ttf);
+}
+@font-face {
+	font-family: "San Francisco Display Semibold";
+	src: url(../fonts/SanFranciscoDisplay-Semibold.ttf);
+}
+@font-face {
+	font-family: "San Francisco Display Thin";
+	src: url(../fonts/SanFranciscoDisplay-Thin.ttf);
+}
+@font-face {
+	font-family: "San Francisco Display Ultralight";
+	src: url(../fonts/SanFranciscoDisplay-Ultralight.ttf);
+}
+
+/* ------------------------------------- LOGIN PAGE ----------------------- */
+.wapper-login-page {
+	background-image: url('../images/login-bg.png');
+	width: 100%;
+	height: 100%;
+	max-width: 1920px;
+	background-repeat: no-repeat;
+	background-position-y: -100px;
+    // background-position: bottom;
+	margin: 0px auto;
+}
+
+.login-form {
+	margin: 0px auto;
+	padding: 150px 15px 0px 15px;
+	width: 100%;
+	height: 100%;
+	max-width: 572px;
+	max-height: 456px;
+	h3 {
+		font-family: $font-medium;
+		font-weight: 600;
+		font-size: 24px;
+		color: #6D6D6D;
+		margin-top: 20px;
+		text-align: center;
+	}
+	img {
+		margin: 0px auto;
+		display: block;
+	}
+	input[type="text"] {
+		font-family: $font-regular;
+		font-weight: 500;
+		border: 1px solid #BDBDBD;
+		box-sizing: border-box;
+		border-radius: 34px;
+		width: 100%;
+		height: 100%;
+		max-width: 572px;
+		max-height: 48px;
+		padding: 16px 20px;
+		margin: 16px 0px;
+		color: $color-dark_2;
+		&:nth-child(2) {
+			margin: 0px 0px 10px 0px;
+		}
+	}
+	input {
+		&:not(#remember) {
+			&:focus {
+				outline: none;
+				border: 1px solid #34AC3D;
+			}
+		}
+	}
+	.item {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0px 5px;
+		margin-top: 8px;
+		a {
+			font-family: $font-medium;
+			text-decoration: none;
+			color: $color-green;
+			font-weight: 500;
+			font-size: 16px;
+		}
+		label {
+			font-family: $font-regular;
+			color: $color-dark_2;
+			font-weight: 400;
+			font-size: 16px;
+		}
+	}
+	button {
+		font-family: $font-semi-bold;
+		font-size: 20px;
+		font-weight: 600;
+		width: 242px;
+		height: 54px;
+		background: #EA8932;
+		border-radius: 46px;
+		color: $color-while;
+		display: block;
+		margin: 0px auto;
+		box-shadow: none !important;
+		&:hover {
+			background: linear-gradient(90deg, #dda631 0%, #df6f0ddc 100%);
+			color: $color-while;
+		}
+	}
+}
+
+.remember {
+	display: block;
+	margin-bottom: 15px;
+	input {
+		padding: 0;
+		height: initial;
+		width: initial;
+		margin-bottom: 0;
+		display: none;
+		cursor: pointer;
+		&:checked+label {
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 2px;
+				left: 7px;
+				width: 7px;
+				height: 14px;
+				border: solid #40B64A;
+				border-width: 0 3px 3px 0;
+				transform: rotate(45deg);
+			}
+		}
+	}
+	label {
+		position: relative;
+		cursor: pointer;
+		&:before {
+			content: '';
+			-webkit-appearance: none;
+			background: #FFFFFF;
+			border: 1px solid #40B64A;
+			box-sizing: border-box;
+			border-radius: 6px;
+			width: 20px;
+			height: 20px;
+			box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+			padding: 10px;
+			display: inline-block;
+			position: relative;
+			vertical-align: middle;
+			cursor: pointer;
+			margin-right: 8px;
+			margin-bottom: 4px;
+		}
+	}
+}
+
+@media (max-width:768px) {
+    /* -------------------------Login page--------------------- */
+    .login-form {
+        padding-top: 100px;
+        img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+    }
+}

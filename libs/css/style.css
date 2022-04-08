@@ -441,6 +441,8 @@ header .btn-trial {
 #services img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #services .tablet-image {
@@ -511,6 +513,10 @@ header .btn-trial {
   display: inline-block;
 }
 
+.stock-manage img {
+  border-radius: 20px 0px 0px 20px;
+}
+
 /* ----------Tra cứu thuốc  và nhập liệu dễ dàng--------  */
 .search {
   background: #EEF6FC;
@@ -551,6 +557,10 @@ header .btn-trial {
 .search .content p span {
   margin-left: 32px;
   display: inline-block;
+}
+
+.search img {
+  border-radius: 0px 20px 20px 0px;
 }
 
 /* ----------Quản lý đơn hàng và khách hàng--------  */
@@ -595,6 +605,10 @@ header .btn-trial {
   display: inline-block;
 }
 
+.order-manage img {
+  border-radius: 20px 0px 0px 20px;
+}
+
 /* ----------Báo cáo nhanh với Cục quản lý Dược--------  */
 .report {
   background: #FFF9EE;
@@ -635,6 +649,10 @@ header .btn-trial {
 .report .content p span {
   margin-left: 32px;
   display: inline-block;
+}
+
+.report img {
+  border-radius: 0px 20px 20px 0px;
 }
 
 /* --------------Bảng giá phần mềm quản lý bán hàng---------------- */
@@ -1356,170 +1374,5 @@ footer .social span:hover {
 .zoomIn {
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
-}
-
-/* ------------------------------------- LOGIN PAGE ----------------------- */
-.wapper-login-page {
-  background-image: url("../images/login-bg.png");
-  width: 100%;
-  height: 100%;
-  max-width: 1920px;
-  max-height: 1080px;
-  background-repeat: no-repeat;
-  background-position-y: -100px;
-  margin: 0px auto;
-}
-
-.login-form {
-  margin: 0px auto;
-  padding: 200px 15px 0px 15px;
-  width: 100%;
-  height: 100%;
-  max-width: 572px;
-  max-height: 456px;
-}
-
-.login-form h3 {
-  font-family: "San Francisco Display Medium";
-  font-weight: 600;
-  font-size: 24px;
-  color: #6D6D6D;
-  margin-top: 20px;
-  text-align: center;
-}
-
-.login-form img {
-  margin: 0px auto;
-  display: block;
-}
-
-.login-form input[type="text"] {
-  font-family: "San Francisco Display Regular";
-  font-weight: 500;
-  border: 1px solid #BDBDBD;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 34px;
-  width: 100%;
-  height: 100%;
-  max-width: 572px;
-  max-height: 48px;
-  padding: 16px 20px;
-  margin: 16px 0px;
-  color: #4F4F4F;
-}
-
-.login-form input[type="text"]:nth-child(2) {
-  margin: 0px 0px 10px 0px;
-}
-
-.login-form input:not(#remember):focus {
-  outline: none;
-  border: 1px solid #34AC3D;
-}
-
-.login-form .item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0px 5px;
-  margin-top: 8px;
-}
-
-.login-form .item a {
-  font-family: "San Francisco Display Medium";
-  text-decoration: none;
-  color: #34AC3D;
-  font-weight: 500;
-  font-size: 16px;
-}
-
-.login-form .item label {
-  font-family: "San Francisco Display Regular";
-  color: #4F4F4F;
-  font-weight: 400;
-  font-size: 16px;
-}
-
-.login-form button {
-  font-family: "San Francisco Display Semibold";
-  font-size: 20px;
-  font-weight: 600;
-  width: 242px;
-  height: 54px;
-  background: #EA8932;
-  border-radius: 46px;
-  color: #FFFFFF;
-  display: block;
-  margin: 0px auto;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-}
-
-.login-form button:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#dda631), to(#df6f0ddc));
-  background: linear-gradient(90deg, #dda631 0%, #df6f0ddc 100%);
-  color: #FFFFFF;
-}
-
-.remember {
-  display: block;
-  margin-bottom: 15px;
-}
-
-.remember input {
-  padding: 0;
-  height: initial;
-  width: initial;
-  margin-bottom: 0;
-  display: none;
-  cursor: pointer;
-}
-
-.remember input:checked + label:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 2px;
-  left: 7px;
-  width: 7px;
-  height: 14px;
-  border: solid #40B64A;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.remember label {
-  position: relative;
-  cursor: pointer;
-}
-
-.remember label:before {
-  content: '';
-  -webkit-appearance: none;
-  background: #FFFFFF;
-  border: 1px solid #40B64A;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 6px;
-  width: 20px;
-  height: 20px;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
-  padding: 10px;
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  cursor: pointer;
-  margin-right: 8px;
-  margin-bottom: 4px;
 }
 /*# sourceMappingURL=style.css.map */
