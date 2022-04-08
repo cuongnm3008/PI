@@ -294,6 +294,9 @@
     font-size: 16px;
     padding-left: 5px;
   }
+  #banner .content {
+    padding-top: 30px;
+  }
   #banner .content h2 {
     font-size: 32px;
   }
@@ -324,6 +327,9 @@
   }
   .wp-content {
     padding: 0px 15px;
+  }
+  #priceboard {
+    padding-bottom: 26px;
   }
   #priceboard .supplies .item {
     width: 100%;
@@ -376,6 +382,9 @@
     padding-bottom: 20px;
     line-height: 1.5;
   }
+  #services {
+    padding-top: 30px;
+  }
   #services .title {
     font-size: 24px;
   }
@@ -396,6 +405,7 @@
   }
   #report-system h2 {
     font-size: 28px;
+    padding-top: 100px;
   }
   #report-system .btn-free-trial {
     font-size: 16px;

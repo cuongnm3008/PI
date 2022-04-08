@@ -427,7 +427,7 @@ header .btn-trial {
   font-family: "San Francisco Display Bold";
   font-weight: 700;
   font-size: 36px;
-  line-height: 54px;
+  line-height: 1.5;
   text-align: center;
   width: 100%;
   max-width: 843px;
@@ -692,6 +692,13 @@ header .btn-trial {
   width: 360px;
   height: 459px;
   text-align: center;
+}
+
+.supplies .item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .supplies .item img {
