@@ -172,7 +172,7 @@
     margin: 0px auto;
   }
   #answer .wp-content h2 {
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 20px;
   }
   #answer .wp-content:last-child {
@@ -319,8 +319,8 @@
   #solution h2 {
     font-size: 24px;
     padding-top: 20px;
-    padding-bottom: 20px;
     line-height: 1.5;
+    margin-bottom: 20px;
   }
   #solution .tab_navigation li h4 {
     font-size: 18px;
@@ -418,6 +418,7 @@
 @media (max-width: 767px) {
   #report-system .content .item {
     max-width: 400px;
+    max-height: 285px;
   }
 }
 
