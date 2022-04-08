@@ -136,7 +136,7 @@ header .btn-register:hover {
 
 header .btn-trial {
   font-family: "San Francisco Display Bold";
-  background: #EA8932;
+  background: #FF871C;
   border-radius: 6px;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -324,8 +324,8 @@ header .btn-trial {
   background-image: url("../images/banner-background.png");
   background-color: #F3FFF9;
   background-repeat: no-repeat;
-  padding-bottom: 200px;
   position: relative;
+  min-height: 484px;
 }
 
 #banner .btn-free-trial {
@@ -727,7 +727,7 @@ header .btn-trial {
 
 .supplies .item p:nth-child(4) span {
   font-family: "San Francisco Display Bold";
-  color: #EA8932;
+  color: #FF871C;
   font-weight: 700;
   font-size: 37px;
   line-height: 44px;
@@ -738,7 +738,7 @@ header .btn-trial {
 .supplies .item p:nth-child(4) span::after {
   content: "đ";
   font-family: "San Francisco Display Bold";
-  color: #EA8932;
+  color: #FF871C;
   font-weight: 700;
   font-size: 28px;
   line-height: 44px;

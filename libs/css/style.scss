@@ -108,7 +108,7 @@ header {
 	}
 	.btn-trial {
 		font-family: $font-bold;
-		background: #EA8932;
+		background: #FF871C;
 		border-radius: 6px;
 		text-transform: uppercase;
 		color: $color-while;
@@ -265,8 +265,9 @@ header {
 	background-image: url("../images/banner-background.png");
 	background-color: #F3FFF9;
 	background-repeat: no-repeat;
-	padding-bottom: 200px;
+	// padding-bottom: 200px;
 	position: relative;
+	min-height: 484px;
 	.btn-free-trial {
 		font-family: $font-semi-bold;
 		font-weight: 600;
@@ -612,7 +613,7 @@ header {
 				color: $color-dark_2;
 				span {
 					font-family: $font-bold;
-					color: #EA8932;
+					color: #FF871C;
 					font-weight: 700;
 					font-size: 37px;
 					line-height: 44px;
@@ -621,7 +622,7 @@ header {
 					&::after {
 						content: "đ";
 						font-family: $font-bold;
-						color: #EA8932;
+						color: #FF871C;
 						font-weight: 700;
 						font-size: 28px;
 						line-height: 44px;
