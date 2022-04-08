@@ -1009,8 +1009,8 @@ header .btn-trial {
 }
 
 #answer .trial {
-  background: -webkit-gradient(linear, left top, left bottom, from(#EA8932), to(#F57807));
-  background: linear-gradient(180deg, #EA8932 0%, #F57807 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF871C), to(#F57807));
+  background: linear-gradient(180deg, #FF871C 0%, #F57807 100%);
   border-radius: 46px;
   width: 100%;
   min-height: 251px;
