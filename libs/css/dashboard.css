@@ -1,0 +1,201 @@
+.wapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+}
+
+.wp-content {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1860px;
+  padding: 0px 30px;
+}
+
+header {
+  background-color: #FFFFFF;
+}
+
+.preheader {
+  padding: 22px 0px;
+}
+
+.preheader .search {
+  position: relative;
+  width: 366px;
+  height: 44px;
+}
+
+.preheader .search input {
+  width: 100%;
+  height: 100%;
+  background: #F3F3F3;
+  border-radius: 28px;
+  padding: 0px 20px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.preheader .search input:focus {
+  border: 1px solid #34AC3D;
+}
+
+.preheader .search button {
+  position: absolute;
+  right: 0px;
+  top: 3px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.preheader ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.preheader ul li {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.preheader ul .date input {
+  width: 186px;
+  height: 44px;
+  position: relative;
+  background: #E5F5E6;
+  border: 1px solid #34AC3D;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 28px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #34AC3D;
+  text-align: center;
+  padding-left: 25px;
+}
+
+.preheader ul .date input::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+.preheader ul .date input::after {
+  content: url("../../images/dashboard/calendar.svg");
+  position: absolute;
+  left: 8px;
+  top: 5px;
+}
+
+.preheader ul .notification div {
+  width: 44px;
+  height: 44px;
+  background-color: #EDEBEB;
+  border-radius: 14px;
+}
+
+.preheader ul .notification div img {
+  display: inline-block;
+  margin: 10px;
+}
+
+.preheader ul .language div {
+  background: #EDEBEB;
+  border-radius: 14px;
+  width: 44px;
+  height: 44px;
+}
+
+.preheader ul .language img {
+  margin: 14px 11px;
+  display: inline-block;
+}
+
+.preheader ul .category {
+  position: relative;
+}
+
+.preheader ul .category select {
+  min-width: 162px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  block-size: -webkit-fit-content;
+  block-size: -moz-fit-content;
+  block-size: fit-content;
+  height: 44px;
+  border: 1px solid #BDBDBD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 33px;
+  padding: 0px 20px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-align: center;
+}
+
+.preheader ul .category::after {
+  content: url("../../images/dashboard/setting.svg");
+  position: absolute;
+  left: 14px;
+  top: 10px;
+}
+
+.preheader ul .category::before {
+  content: url("../../images/dashboard/chevron.svg");
+  position: absolute;
+  right: 60px;
+  top: 10px;
+}
+
+.preheader ul .user {
+  line-height: 44px;
+}
+
+.preheader ul .user span {
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000;
+  margin-right: 15px;
+  float: right;
+}
+
+.preheader ul .user img {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #34AC3D;
+  border-radius: 14px;
+  float: right;
+}
+
+.hor-menu .navbar-nav .base {
+  margin-top: 3px;
+  margin-right: 16px;
+  text-align: center;
+}
+
+.hor-menu .navbar-nav .base a {
+  width: 129px;
+  height: 41px;
+  background: #FF9432 !important;
+  border-radius: 20px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 16px !important;
+  display: inline-block;
+}
+
+.hor-menu .navbar-nav .base a img {
+  margin-left: 5px;
+}
+
+.hor-menu .navbar-nav li:nth-child(7) {
+  display: none;
+}
+/*# sourceMappingURL=dashboard.css.map */

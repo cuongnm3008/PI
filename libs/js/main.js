@@ -25,7 +25,7 @@ $(document).ready(function () {
             index = $(this).index();
             $('.tab_navigation li').removeClass('active');
             $(this).addClass('active');
-            $("#slideshow").trigger("to.owl.carousel", [index, 1])
+            $("#slideshow").trigger("to.owl.carousel", [index, 1000])
         });
 
         $('#tabCotents .tab_content').hide();
@@ -119,5 +119,13 @@ $(document).ready(function () {
     $("#closePhoneMenu").click(function () {
         $('#wapper-tablet-menu').attr('style', 'width: 0px ');
         $('header .bg-overflow').attr('style', 'display: none ');
+    });
+});
+
+
+//Animation
+$(document).ready(function () {
+    AOS.init({
+        once: true,
     });
 });
